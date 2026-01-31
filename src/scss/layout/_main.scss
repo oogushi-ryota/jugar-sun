@@ -1,0 +1,11 @@
+@use "global/variables" as *;
+@use "global/mixins" as *;
+@use "global/color" as *;
+@use "global/functions" as *;
+
+.l-main {
+  & {
+    padding-top: header-height();
+    overflow: hidden;
+  }
+}

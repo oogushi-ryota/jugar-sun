@@ -1,0 +1,17 @@
+@use "global/mixins" as *;
+
+.pc {
+  display: block !important;
+
+  @include sp {
+    display: none !important;
+  }
+}
+
+.sp {
+  display: none !important;
+
+  @include sp {
+    display: block !important;
+  }
+}

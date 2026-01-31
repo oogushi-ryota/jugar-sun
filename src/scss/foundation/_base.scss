@@ -1,0 +1,48 @@
+@use "global/variables" as *;
+@use "global/mixins" as *;
+@use "global/color" as *;
+
+// // ▼アドビフォント_チラつき防止
+// html {
+//   visibility: hidden;
+//   /* ▼スクロールバーを無効化 (Firefox) */
+//   scrollbar-width: none;
+//   /* ▲スクロールバーを無効化 (Firefox) */
+// }
+
+// html.wf-active {
+//   visibility: visible;
+// }
+// ▲アドビフォント_チラつき防止
+
+html {
+  font-size:62.5%;
+}
+
+@include pc {
+  html {
+    font-size: calc(10 * (100vw / 1440));
+  }
+
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
+
+@include sp {
+  html {
+    font-size: calc(10 * (100vw / 390));
+  }
+}
+
+body {
+  color: $base-font-color;
+  font-family: $ff-noto-sans-cjk-jp;
+  font-style: normal;
+  font-optical-sizing: auto;
+  background-color: $base-bg-color;
+
+  &.is-active {
+    overflow: hidden;
+  }
+}
