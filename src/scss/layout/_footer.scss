@@ -4,6 +4,170 @@
 
 .l-footer {
   & {
-    
+    background-color: color(org,base);
+    padding: 11.6rem 0 3.2rem;
+    overflow: hidden;
+
+    @include sp {
+      padding: 8rem 0 2rem;
+      position: relative;
+    }
+
+    &__wrap {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      @include sp {
+        flex-direction: column;
+        gap: 6rem;
+      }
+    }
+
+    &__company {
+      width: 27rem;
+
+      @include sp {
+        width: 100%;
+      }
+    }
+
+    &__logo {
+      display: inline-block;
+      width: 27rem;
+
+      @include sp {
+        width: 20rem;
+      }
+    }
+
+    &__logo-img {
+      width: 100%;
+    }
+
+    &__company-details {
+      margin-top: 3.2rem;
+
+      @include sp {
+        margin-top: 1.6rem;
+      }
+    }
+
+    &__company-name {
+      color: color(wt,base);
+      font-size: 1.4rem;
+      font-weight: $base-font-regular;
+      line-height: 150%;
+
+      @include sp {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__company-address {
+      color: color(wt,base);
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: $base-font-regular;
+      line-height: 150%;
+      margin-top: .2rem;
+
+      @include sp {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__nav-list {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      gap: 10rem;
+
+      @include sp {
+        flex-direction: column;
+        gap: 2.4rem;
+      }
+    }
+
+    &__nav-column-list {
+      @include sp {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 2.4rem 9rem;
+      }
+    }
+
+    &__nav-column-item {
+      @include sp {
+        min-width: 8.5rem;
+      }
+
+      & + & {
+        margin-top: 3.2rem;
+
+        @include sp {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &__nav-link {
+      color: color(wt,base);
+      font-size: 2rem;
+      font-weight: $base-font-black;
+      line-height: 150%;
+
+      @include sp {
+        font-size: 1.6rem;
+      }
+
+      &--policy {
+        font-size: 1.4rem;
+        font-weight: $base-font-bold;
+
+        @include sp {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &__bottom-cont {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 6.5rem;
+    }
+
+    &__small {
+      color: color(wt,base);
+      font-size: 1.2rem;
+      font-weight: $base-font-regular;
+      line-height: 150%;
+    }
+
+    &__back-btn {
+      color: color(wt,base);
+      font-size: 1.4rem;
+      font-weight: $base-font-regular;
+      line-height: 150%;
+
+      @include sp {
+        font-size: 1rem;
+        text-align: center;
+        position: absolute;
+        top: 3.2rem;
+        right: 2rem;
+      }
+    }
+
+    &__marquee {
+      margin-top: 8rem;
+
+      @include sp {
+        margin-top: 6rem;
+      }
+    }
   }
 }

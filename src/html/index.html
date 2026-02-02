@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/style.min.css">
-  <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
 
   <!-- フォント読み込み -->
   <script>
@@ -20,18 +19,588 @@
 </head>
 
 <body>
-  <header class="l-header">
-    
-  </header>
-
   <main class="l-main">
-    
+    <div class="p-top">
+      <div class="p-top-fv">
+        <video class="p-top-fv__video pc" src="/assets/movie/top-mv.mp4" autoplay muted loop playsinline></video>
+        <video class="p-top-fv__video sp" src="/assets/movie/sp/top-mv.mp4" autoplay muted loop playsinline></video>
+      </div>
+
+      <header class="p-top-header">
+        <div class="p-top-header__inner">
+          <div class="p-top-header__wrap">
+            <h1 class="p-top-header__logo">
+              <a href="/" class="p-top-header__logo-link">
+                <picture class="p-top-header__logo-img">
+                  <source srcset="/assets/img/common/logo.webp" type="image/webp">
+                  <img src="/assets/img/common/logo.png" alt="Jugar Sun" width="220" height="42">
+                </picture>
+              </a>
+            </h1>
+            <div class="p-top-header__hamburger sp js-nav-btn">
+              <div class="p-top-header__line-wrap">
+                <span class="p-top-header__hamburger-line"></span>
+                <span class="p-top-header__hamburger-line"></span>
+              </div>
+              <span class="p-top-header__hamburger-txt">MENU</span>
+            </div>
+            <nav class="p-top-header__nav js-nav">
+              <ul class="p-top-header__list">
+                <li class="p-top-header__column-item">
+                  <ul class="p-top-header__column-list">
+                    <li class="p-top-header__item">
+                      <a href="/" class="p-top-header__link">
+                        <span class="p-top-header__item-num">01</span>
+                        TOP
+                      </a>
+                    </li>
+                    <li class="p-top-header__item">
+                      <a href="#" class="p-top-header__link">
+                        <span class="p-top-header__item-num">02</span>
+                        SERVICE
+                      </a>
+                    </li>
+                    <li class="p-top-header__item">
+                      <a href="/creators" class="p-top-header__link">
+                        <span class="p-top-header__item-num">03</span>
+                        CREATORS
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="p-top-header__column-item">
+                  <ul class="p-top-header__column-list">
+                    <li class="p-top-header__item">
+                      <a href="/news" class="p-top-header__link">
+                        <span class="p-top-header__item-num">04</span>
+                        NEWS
+                      </a>
+                    </li>
+                    <li class="p-top-header__item">
+                      <a href="/recruit" class="p-top-header__link">
+                        <span class="p-top-header__item-num">05</span>
+                        RECRUIT
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="p-top-header__column-item">
+                  <ul class="p-top-header__column-list">
+                    <li class="p-top-header__item p-top-header__item--contact">
+                      <a href="/contact" class="p-top-header__link">CONTACT</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <section class="p-top-about">
+        <div class="c-inner">
+          <div class="p-top-about__cont">
+            <span class="c-top-secttl__ja c-top-secttl__ja--org">ABOUT</span>
+            <h2 class="p-top-about__ttl">
+              <span class="p-top-about__ttl-ja">
+                誰もが煌めきを<br>
+                感じられる世界の実現
+              </span>
+              <span class="p-top-about__ttl-en">Creating a world where everyone can feel sparkle.</span>
+            </h2>
+            <p class="p-top-about__txt">
+              日々様々なモノが生まれては消えていく、“正解”のない まさに激動の時代。<br>
+              Jugar Sunの由来にもなっている“太陽”は、平等に存在する“希望”の光です。<br>
+              「あなた独自の“太陽”を見つけて欲しい」という強い願いを込めて私たちはエンターテイメントの持つ力を信じて、新しい事に挑戦し続けます。
+            </p>
+            <div class="p-top-about__btn">
+              <a href="" class="c-btn">
+                <span class="c-btn__txt c-btn__txt--bk">DETAIL</span>
+                <span class="c-btn__obj c-btn__obj--bk">
+                  <svg width="21" height="6" viewBox="0 0 21 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 5.33398H19L14.5 0.333984" stroke="#453E3E"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-top-news">
+        <div class="c-inner">
+          <div class="p-top-news__wrap">
+            <h2 class="c-top-secttl">
+              <span class="c-top-secttl__en c-top-secttl__en--bk">NEWS</span>
+              <span class="c-top-secttl__ja c-top-secttl__ja--org">お知らせ</span>
+            </h2>
+            <a href="/news" class="c-btn">
+              <span class="c-btn__txt c-btn__txt--org">VIEW ALL</span>
+              <span class="c-btn__obj c-btn__obj--org">
+                <svg width="21" height="6" viewBox="0 0 21 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 5.33398H19L14.5 0.333984" stroke="#FC6847"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="p-top-news__slider js-slider">
+            <div class="p-top-news__slider-item">
+              <a href="" class="p-top-news__link">
+                <figure class="p-top-news__thumb">
+                  <img src="/assets/img/sample.jpg" alt="サムネイル" width="440" height="230">
+                </figure>
+                <time datetime="2024-12-02" class="p-top-news__time">2024.12.02</time>
+                <p class="p-top-news__ttl">弊社の感動とおもしろいが詰まった沖縄合宿を紹介します！</p>
+              </a>
+            </div>
+            <div class="p-top-news__slider-item">
+              <a href="" class="p-top-news__link">
+                <figure class="p-top-news__thumb">
+                  <img src="/assets/img/sample.jpg" alt="サムネイル" width="440" height="230">
+                </figure>
+                <time datetime="2024-12-02" class="p-top-news__time">2024.12.02</time>
+                <p class="p-top-news__ttl">弊社の感動とおもしろいが詰まった沖縄合宿を紹介します！</p>
+              </a>
+            </div>
+            <div class="p-top-news__slider-item">
+              <a href="" class="p-top-news__link">
+                <figure class="p-top-news__thumb">
+                  <img src="/assets/img/sample.jpg" alt="サムネイル" width="440" height="230">
+                </figure>
+                <time datetime="2024-12-02" class="p-top-news__time">2024.12.02</time>
+                <p class="p-top-news__ttl">弊社の感動とおもしろいが詰まった沖縄合宿を紹介します！</p>
+              </a>
+            </div>
+            <div class="p-top-news__slider-item">
+              <a href="" class="p-top-news__link">
+                <figure class="p-top-news__thumb">
+                  <img src="/assets/img/sample.jpg" alt="サムネイル" width="440" height="230">
+                </figure>
+                <time datetime="2024-12-02" class="p-top-news__time">2024.12.02</time>
+                <p class="p-top-news__ttl">弊社の感動とおもしろいが詰まった沖縄合宿を紹介します！</p>
+              </a>
+            </div>
+          </div>
+          <div class="p-top-news__slider-progress js-slider-progress">
+            <div class="p-top-news__slider-progress-bar js-slider-progress__bar"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-top-business">
+        <div class="c-inner">
+          <h2 class="c-top-secttl">
+            <span class="c-top-secttl__en c-top-secttl__en--bk">business</span>
+            <span class="c-top-secttl__ja c-top-secttl__ja--org">ビジネス</span>
+          </h2>
+          <div class="p-top-business__lead">
+            <h3 class="p-top-business__lead-ttl">エンターテイメントを軸としたトータルマーケティングカンパニー</h3>
+            <p class="p-top-business__lead-txt">我々が提供する3つの強みと4つのソリューション</p>
+          </div>
+          <div class="p-top-business__wrap">
+            <div class="p-top-business__obj">
+              <figure class="p-top-business__obj-img">
+                <img src="/assets/img/top/business/feature_obj.svg" alt="" width="300" height="298" loading="lazy">
+              </figure>
+            </div>
+            <ol class="p-top-business__feature-list">
+              <li class="p-top-business__feature-item">
+                <details class="p-top-business__details js-accordion">
+                  <summary class="p-top-business__summary js-summary">
+                    <h4 class="p-top-business__feature-ttl">
+                      <span class="p-top-business__feature-num">01</span>
+                      クリエイティブなコンテンツ制作力
+                    </h4>
+                    <span class="p-top-business__summary-btn"></span>
+                  </summary>
+                  <p class="p-top-business__feature-txt js-accordion-details">
+                    エンターテイメント業界の知見を活かした高品質なコンテンツを制作。<br>
+                    視聴者の心を掴むストーリーやビジュアルを提供。
+                  </p>
+                </details>
+              </li>
+              <li class="p-top-business__feature-item">
+                <details class="p-top-business__details js-accordion">
+                  <summary class="p-top-business__summary js-summary">
+                    <h4 class="p-top-business__feature-ttl">
+                      <span class="p-top-business__feature-num">02</span>
+                      マルチプラットフォーム展開のノウハウ
+                    </h4>
+                    <span class="p-top-business__summary-btn"></span>
+                  </summary>
+                  <p class="p-top-business__feature-txt js-accordion-details">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </details>
+              </li>
+              <li class="p-top-business__feature-item">
+                <details class="p-top-business__details js-accordion">
+                  <summary class="p-top-business__summary js-summary">
+                    <h4 class="p-top-business__feature-ttl">
+                      <span class="p-top-business__feature-num">03</span>
+                      インフルエンサーとの強固なネットワーク
+                    </h4>
+                    <span class="p-top-business__summary-btn"></span>
+                  </summary>
+                  <p class="p-top-business__feature-txt js-accordion-details">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </details>
+              </li>
+            </ol>
+          </div>
+          <ul class="p-top-business__list">
+            <li class="p-top-business__item">
+              <a href="/marketing" class="p-top-business__link">
+                <picture class="l-footer__logo-img">
+                  <source srcset="/assets/img/top/business/sp/business_img01.webp" type="image/webp" media="(max-width: 767px)">
+                  <source srcset="/assets/img/top/business/sp/business_img01.jpg" media="(max-width: 767px)">
+                  <source srcset="/assets/img/top/business/business_img01.webp" type="image/webp">
+                  <img src="/assets/img/top/business/business_img01.jpg" alt="マーケティング" width="380" height="507" loading="lazy">
+                </picture>
+              </a>
+            </li>
+            <li class="p-top-business__item">
+              <a href="/produce" class="p-top-business__link">
+                <picture class="l-footer__logo-img">
+                  <source srcset="/assets/img/top/business/sp/business_img02.webp" type="image/webp" media="(max-width: 767px)">
+                  <source srcset="/assets/img/top/business/sp/business_img02.jpg" media="(max-width: 767px)">
+                  <source srcset="/assets/img/top/business/business_img02.webp" type="image/webp">
+                  <img src="/assets/img/top/business/business_img02.jpg" alt="マーケティング" width="380" height="507" loading="lazy">
+                </picture>
+              </a>
+            </li>
+            <li class="p-top-business__item">
+              <a href="/production" class="p-top-business__link">
+                <picture class="l-footer__logo-img">
+                  <source srcset="/assets/img/top/business/sp/business_img03.webp" type="image/webp" media="(max-width: 767px)">
+                  <source srcset="/assets/img/top/business/sp/business_img03.jpg" media="(max-width: 767px)">
+                  <source srcset="/assets/img/top/business/business_img03.webp" type="image/webp">
+                  <img src="/assets/img/top/business/business_img03.jpg" alt="マーケティング" width="380" height="507" loading="lazy">
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="p-top-creator">
+        <a href="" class="p-top-creator__link">
+          <picture class="p-top-creator__img">
+            <source srcset="/assets/img/top/creator/creator.webp" type="image/webp">
+            <img src="/assets/img/top/creator/creator.jpg" alt="マーケティング" width="1440" height="943" loading="lazy">
+          </picture>
+        </a>
+      </section>
+
+      <section class="p-top-works">
+        <div class="c-inner">
+          <div class="p-top-news__wrap">
+            <h2 class="c-top-secttl">
+              <span class="c-top-secttl__en c-top-secttl__en--bk">WORKS</span>
+              <span class="c-top-secttl__ja c-top-secttl__ja--org">実績</span>
+            </h2>
+            <a href="#" class="c-btn">
+              <span class="c-btn__txt c-btn__txt--org">VIEW ALL</span>
+              <span class="c-btn__obj c-btn__obj--org">
+                <svg width="21" height="6" viewBox="0 0 21 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 5.33398H19L14.5 0.333984" stroke="#FC6847"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <ul class="p-top-works__list">
+            <li class="p-top-works__item">
+              <picture class="p-top-works__img">
+                <source srcset="/assets/img/top/works/works_img01.webp" type="image/webp">
+                <img src="/assets/img/top/works/works_img01.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-top-works__item">
+              <picture class="p-top-works__img">
+                <source srcset="/assets/img/top/works/works_img02.webp" type="image/webp">
+                <img src="/assets/img/top/works/works_img02.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-top-works__item">
+              <picture class="p-top-works__img">
+                <source srcset="/assets/img/top/works/works_img03.webp" type="image/webp">
+                <img src="/assets/img/top/works/works_img03.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-top-works__item">
+              <picture class="p-top-works__img">
+                <source srcset="/assets/img/top/works/works_img04.webp" type="image/webp">
+                <img src="/assets/img/top/works/works_img04.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-top-works__item">
+              <picture class="p-top-works__img">
+                <source srcset="/assets/img/top/works/works_img05.webp" type="image/webp">
+                <img src="/assets/img/top/works/works_img05.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-top-works__item">
+              <picture class="p-top-works__img">
+                <source srcset="/assets/img/top/works/works_img06.webp" type="image/webp">
+                <img src="/assets/img/top/works/works_img06.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-top-works__item">
+              <picture class="p-top-works__img">
+                <source srcset="/assets/img/top/works/works_img07.webp" type="image/webp">
+                <img src="/assets/img/top/works/works_img07.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-top-works__item">
+              <picture class="p-top-works__img">
+                <source srcset="/assets/img/top/works/works_img08.webp" type="image/webp">
+                <img src="/assets/img/top/works/works_img08.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-top-works__item">
+              <picture class="p-top-works__img">
+                <source srcset="/assets/img/top/works/works_img09.webp" type="image/webp">
+                <img src="/assets/img/top/works/works_img09.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="p-top-recruit">
+        <a href="" class="p-top-recruit__link">
+          <picture class="p-top-recruit__img">
+            <source srcset="/assets/img/top/recruit/recruit.webp" type="image/webp">
+            <img src="/assets/img/top/recruit/recruit.jpg" alt="採用募集中" width="1440" height="810" loading="lazy">
+          </picture>
+        </a>
+      </section>
+
+      <section class="p-top-company">
+        <div class="c-inner">
+          <div class="p-top-company__wrap">
+            <picture class="p-top-company__img">
+              <source srcset="/assets/img/top/company/company.webp" type="image/webp">
+              <img src="/assets/img/top/company/company.jpg" alt="" width="470" height="626" loading="lazy">
+            </picture>
+            <div class="p-top-company__txtblk">
+              <h2 class="c-top-secttl">
+                <span class="c-top-secttl__en c-top-secttl__en--wt">COMPANY</span>
+                <span class="c-top-secttl__ja c-top-secttl__ja--wt">私たちについて</span>
+              </h2>
+              <div class="p-top-company__btn">
+                <a href="/company" class="c-btn">
+                  <span class="c-btn__txt c-btn__txt--wt">VIEW ALL</span>
+                  <span class="c-btn__obj c-btn__obj--wt">
+                    <svg width="21" height="6" viewBox="0 0 21 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 5.33398H19L14.5 0.333984" stroke="#FFF"/>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="c-contact-sec">
+        <div class="c-inner">
+          <div class="c-contact-sec__wrap">
+            <h2 class="c-top-secttl">
+              <span class="c-top-secttl__en c-top-secttl__en--wt">CONTACT US</span>
+              <span class="c-top-secttl__ja c-top-secttl__ja--wt">お問い合わせ</span>
+            </h2>
+            <a href="/contact" class="c-contact-sec__btn"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-top-client">
+        <div class="c-inner">
+          <h2 class="c-top-secttl">
+            <span class="c-top-secttl__en c-top-secttl__en--bk">OUR CLIENTS</span>
+            <span class="c-top-secttl__ja c-top-secttl__ja--org">お取引先企業</span>
+          </h2>
+        </div>
+        <div class="p-top-client__marquee-area">
+          <div class="p-top-client__top-marquee">
+            <div class="c-marquee c-marquee--client-top">
+              <div class="c-marquee__blk">
+                <picture class="c-marquee__img c-marquee__img--client-top">
+                  <source srcset="/assets/img/top/client/marquee_top.webp" type="image/webp">
+                  <img src="/assets/img/top/client/marquee_top.png" alt="Jugar Sun" width="1920" height="121" loading="lazy">
+                </picture>
+                <picture class="c-marquee__img c-marquee__img--client-top">
+                  <source srcset="/assets/img/top/client/marquee_top.webp" type="image/webp">
+                  <img src="/assets/img/top/client/marquee_top.png" alt="Jugar Sun" width="1920" height="121" loading="lazy">
+                </picture>
+                <picture class="c-marquee__img c-marquee__img--client-top">
+                  <source srcset="/assets/img/top/client/marquee_top.webp" type="image/webp">
+                  <img src="/assets/img/top/client/marquee_top.png" alt="Jugar Sun" width="1920" height="121" loading="lazy">
+                </picture>
+              </div>
+              <div class="c-marquee__blk">
+                <picture class="c-marquee__img c-marquee__img--client-top">
+                  <source srcset="/assets/img/top/client/marquee_top.webp" type="image/webp">
+                  <img src="/assets/img/top/client/marquee_top.png" alt="Jugar Sun" width="1920" height="121" loading="lazy">
+                </picture>
+                <picture class="c-marquee__img c-marquee__img--client-top">
+                  <source srcset="/assets/img/top/client/marquee_top.webp" type="image/webp">
+                  <img src="/assets/img/top/client/marquee_top.png" alt="Jugar Sun" width="1920" height="121" loading="lazy">
+                </picture>
+                <picture class="c-marquee__img c-marquee__img--client-top">
+                  <source srcset="/assets/img/top/client/marquee_top.webp" type="image/webp">
+                  <img src="/assets/img/top/client/marquee_top.png" alt="Jugar Sun" width="1920" height="121" loading="lazy">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="p-top-client__bottom-marquee">
+            <div class="c-marquee c-marquee--client-bottom">
+              <div class="c-marquee__blk">
+                <picture class="c-marquee__img c-marquee__img--client-bottom">
+                  <source srcset="/assets/img/top/client/marquee_bottom.webp" type="image/webp">
+                  <img src="/assets/img/top/client/marquee_bottom.png" alt="Jugar Sun" width="1920" height="121" loading="lazy">
+                </picture>
+                <picture class="c-marquee__img c-marquee__img--client-bottom">
+                  <source srcset="/assets/img/top/client/marquee_bottom.webp" type="image/webp">
+                  <img src="/assets/img/top/client/marquee_bottom.png" alt="Jugar Sun" width="1920" height="121" loading="lazy">
+                </picture>
+                <picture class="c-marquee__img c-marquee__img--client-bottom">
+                  <source srcset="/assets/img/top/client/marquee_bottom.webp" type="image/webp">
+                  <img src="/assets/img/top/client/marquee_bottom.png" alt="Jugar Sun" width="1920" height="121" loading="lazy">
+                </picture>
+              </div>
+              <div class="c-marquee__blk">
+                <picture class="c-marquee__img c-marquee__img--client-bottom">
+                  <source srcset="/assets/img/top/client/marquee_bottom.webp" type="image/webp">
+                  <img src="/assets/img/top/client/marquee_bottom.png" alt="Jugar Sun" width="1920" height="121" loading="lazy">
+                </picture>
+                <picture class="c-marquee__img c-marquee__img--client-bottom">
+                  <source srcset="/assets/img/top/client/marquee_bottom.webp" type="image/webp">
+                  <img src="/assets/img/top/client/marquee_bottom.png" alt="Jugar Sun" width="1920" height="121" loading="lazy">
+                </picture>
+                <picture class="c-marquee__img c-marquee__img--client-bottom">
+                  <source srcset="/assets/img/top/client/marquee_bottom.webp" type="image/webp">
+                  <img src="/assets/img/top/client/marquee_bottom.png" alt="Jugar Sun" width="1920" height="121" loading="lazy">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="l-footer">
-    
+    <div class="c-inner">
+      <div class="l-footer__wrap">
+        <div class="l-footer__company">
+          <a href="/" class="l-footer__logo">
+            <picture class="l-footer__logo-img">
+              <source srcset="/assets/img/common/logo_ wt.webp" type="image/webp">
+              <img src="/assets/img/common/logo_wt.png" alt="Jugar Sun" width="270" height="51" loading="lazy">
+            </picture>
+          </a>
+          <div class="l-footer__company-details">
+            <span class="l-footer__company-name">株式会社Jugar Sun</span>
+            <address class="l-footer__company-address">
+              〒108-0023<br>
+              東京都港区芝浦3-6-14 Expert Tamachi 5F
+            </address>
+          </div>
+        </div>
+        <nav class="l-footer__nav">
+          <ul class="l-footer__nav-list">
+            <li class="l-footer__nav-item">
+              <ul class="l-footer__nav-column-list">
+                <li class="l-footer__nav-column-item">
+                  <a href="/" class="l-footer__nav-link">TOP</a>
+                </li>
+              </ul>
+            </li>
+            <li class="l-footer__nav-item">
+              <ul class="l-footer__nav-column-list">
+                <li class="l-footer__nav-column-item">
+                  <a href="#" class="l-footer__nav-link">SERVICE</a>
+                </li>
+                <li class="l-footer__nav-column-item">
+                  <a href="/creators" class="l-footer__nav-link">CREATORS</a>
+                </li>
+              </ul>
+            </li>
+            <li class="l-footer__nav-item">
+              <ul class="l-footer__nav-column-list">
+                <li class="l-footer__nav-column-item">
+                  <a href="/company" class="l-footer__nav-link">COMPANY</a>
+                </li>
+                <li class="l-footer__nav-column-item">
+                  <a href="/news" class="l-footer__nav-link">NEWS</a>
+                </li>
+              </ul>
+            </li>
+            <li class="l-footer__nav-item">
+              <ul class="l-footer__nav-column-list">
+                <li class="l-footer__nav-column-item">
+                  <a href="/recruit" class="l-footer__nav-link">RECRUIT</a>
+                </li>
+                <li class="l-footer__nav-column-item">
+                  <a href="/contact" class="l-footer__nav-link">CONTACT</a>
+                </li>
+                <li class="l-footer__nav-column-item">
+                  <a href="/contact" class="l-footer__nav-link l-footer__nav-link--policy">Privacy Policy</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="l-footer__bottom-cont">
+        <small class="l-footer__small">© 2025 Jugar Sun Inc.</small>
+        <a href="#" class="l-footer__back-btn">BACK <br class="sp">TO TOP</a>
+      </div>
+      <div class="l-footer__marquee">
+        <div class="c-marquee c-marquee--footer">
+          <div class="c-marquee__blk">
+            <picture class="c-marquee__img c-marquee__img--footer">
+              <source srcset="/assets/img/common/marquee.webp" type="image/webp">
+              <img src="/assets/img/common/marquee.png" alt="Jugar Sun" width="1000" height="191" loading="lazy">
+            </picture>
+            <picture class="c-marquee__img c-marquee__img--footer">
+              <source srcset="/assets/img/common/marquee.webp" type="image/webp">
+              <img src="/assets/img/common/marquee.png" alt="Jugar Sun" width="1000" height="191" loading="lazy">
+            </picture>
+            <picture class="c-marquee__img c-marquee__img--footer">
+              <source srcset="/assets/img/common/marquee.webp" type="image/webp">
+              <img src="/assets/img/common/marquee.png" alt="Jugar Sun" width="1000" height="191" loading="lazy">
+            </picture>
+            <picture class="c-marquee__img c-marquee__img--footer">
+              <source srcset="/assets/img/common/marquee.webp" type="image/webp">
+              <img src="/assets/img/common/marquee.png" alt="Jugar Sun" width="1000" height="191" loading="lazy">
+            </picture>
+          </div>
+          <div class="c-marquee__blk">
+            <picture class="c-marquee__img c-marquee__img--footer">
+              <source srcset="/assets/img/common/marquee.webp" type="image/webp">
+              <img src="/assets/img/common/marquee.png" alt="Jugar Sun" width="1000" height="191" loading="lazy">
+            </picture>
+            <picture class="c-marquee__img c-marquee__img--footer">
+              <source srcset="/assets/img/common/marquee.webp" type="image/webp">
+              <img src="/assets/img/common/marquee.png" alt="Jugar Sun" width="1000" height="191" loading="lazy">
+            </picture>
+            <picture class="c-marquee__img c-marquee__img--footer">
+              <source srcset="/assets/img/common/marquee.webp" type="image/webp">
+              <img src="/assets/img/common/marquee.png" alt="Jugar Sun" width="1000" height="191" loading="lazy">
+            </picture>
+            <picture class="c-marquee__img c-marquee__img--footer">
+              <source srcset="/assets/img/common/marquee.webp" type="image/webp">
+              <img src="/assets/img/common/marquee.png" alt="Jugar Sun" width="1000" height="191" loading="lazy">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
+  <script type="module" src="/assets/js/jquery.min.js"></script>
+  <script type="module" src="/assets/js/slick.min.js"></script>
   <script type="module" src="/assets/js/main.min.js"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@
 // ===================================
 @use "foundation/base" as *;
 @use "foundation/reset" as *;
+@use "foundation/animation" as *;
 
 // ===================================
 // Layout
@@ -14,14 +15,28 @@
 // ===================================
 // Component
 // ===================================
+@use "object/component/inner" as *;
+@use "object/component/top-secttl" as *;
+@use "object/component/contact-sec" as *;
+@use "object/component/btn" as *;
 @use "object/component/g-nav" as *;
 @use "object/component/secttl" as *;
+@use "object/component/marquee" as *;
 
 // ===================================
 // Project
 // ===================================
 // トップページ
-// @use "object/project/top/fv" as *;
+@use "object/project/top/fv" as *;
+@use "object/project/top/header" as *;
+@use "object/project/top/about" as *;
+@use "object/project/top/news" as *;
+@use "object/project/top/business" as *;
+@use "object/project/top/creator" as *;
+@use "object/project/top/works" as *;
+@use "object/project/top/recruit" as *;
+@use "object/project/top/company" as *;
+@use "object/project/top/client" as *;
 
 // ===================================
 // Utility
@@ -31,9 +46,15 @@
 // ===================================
 // Animation
 // ===================================
-@use "animation/hamburger" as *;
+// @use "animation/hamburger" as *;
+
+// ===================================
+// State
+// ===================================
+@use "state/is" as *;
 
 // ===================================
 // vendor
 // ===================================
 @use "vendor/swiper" as *;
+@use "vendor/slick" as *;

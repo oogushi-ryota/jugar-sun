@@ -1,0 +1,63 @@
+@use "global/variables" as *;
+@use "global/mixins" as *;
+@use "global/color" as *;
+
+.c-marquee {
+  & {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    will-change: animation;
+
+    &--footer {
+      animation: marquee 30s linear infinite;
+    }
+
+    &--client-top {
+      animation: marquee 40s linear infinite;
+    }
+
+    &--client-bottom {
+      animation: marquee 38s linear infinite;
+      animation-direction: reverse;
+    }
+  }
+
+  &__blk {
+    width: max-content;
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    &--footer {
+      width: 100rem;
+      padding: 0 2rem;
+
+      @include sp {
+        width: 40rem;
+        padding: 0 1rem;
+      }
+    }
+
+    &--client-top {
+      width: 192rem;
+      padding: 0 1.2rem;
+
+      @include sp {
+        width: 106.9rem;
+        padding: 0 .5rem;
+      }
+    }
+
+    &--client-bottom {
+      width: 159.6rem;
+      padding: 0 1.2rem;
+
+      @include sp {
+        width: 89rem;
+        padding: 0 .5rem;
+      }
+    }
+  }
+}

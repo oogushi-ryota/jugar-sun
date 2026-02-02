@@ -1,0 +1,125 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-top-about {
+  & {
+    margin-top: 6rem;
+    position: relative;
+    overflow: hidden;
+
+    @include sp {
+      margin-top: 10rem;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 48.3rem;
+      height: 47.5rem;
+      background-image: url(../img/top/about/sec_obj.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      bottom: 8rem;
+      right: -21.5rem;
+      z-index: -1;
+
+      @include sp {
+        width: 26.5rem;
+        height: 26.1rem;
+        top: 9.7rem;
+        bottom: unset;
+        right: unset;
+        left: -11.7rem;
+      }
+    }
+
+    &__cont {
+      padding: 0 4.4rem 0 6rem;
+
+      @include sp {
+        padding: unset;
+      }
+    }
+
+    &__ttl {
+      margin-top: 3.2rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 2rem;
+      position: relative;
+
+      @include sp {
+        margin-top: 3.2rem;
+        gap: 1.6rem;
+      }
+
+      &::before {
+        content: "";
+        width: 92rem;
+        height: 26rem;
+        background-image: url(../img/top/about/ttl_obj.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -3.2rem;
+        left: 6.6rem;
+        z-index: -1;
+
+        @include sp {
+          width: 35rem;
+          height: 9.3rem;
+          top: 0;
+          left: 2rem;
+        }
+      }
+    }
+
+    &__ttl-ja {
+      font-size: 8.8rem;
+      font-weight: $base-font-black;
+      line-height: 130%;
+
+      @include sp {
+        font-size: 3.5rem;
+      }
+    }
+
+    &__ttl-en {
+      font-size: 3.6rem;
+      font-weight: $base-font-bold;
+      line-height: 130%;
+
+      @include sp {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__txt {
+      font-size: 2rem;
+      font-weight: $base-font-bold;
+      line-height: 250%;
+      margin-top: 12rem;
+
+      @include sp {
+        font-size: 1.5rem;
+        line-height: 200%;
+        margin-top: 6rem;
+      }
+    }
+
+    &__btn {
+      margin-top: 6rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      @include sp {
+        margin-top: 4.8rem;
+      }
+    }
+  }
+}

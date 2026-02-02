@@ -1,0 +1,253 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-top-business {
+  & {
+    margin-top: 20rem;
+    position: relative;
+
+    @include sp {
+      margin-top: 10rem;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 93.5rem;
+      height: 103.5rem;
+      background-image: url(../img/top/business/sec_obj.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: .3;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+
+      @include sp {
+        width: 25.4rem;
+        height: 71.3rem;
+        background-image: url(../img/top/business/sp/sec_obj.png);
+        opacity: .1;
+        top: 1.3rem;
+      }
+    }
+
+    &__lead {
+      margin-top: 8rem;
+
+      @include sp {
+        margin-top: 5.6rem;
+      }
+    }
+
+    &__lead-ttl {
+      font-size: 3.6rem;
+      font-weight: $base-font-black;
+      line-height: 150%;
+
+      @include sp {
+        font-size: 2rem;
+      }
+    }
+
+    &__lead-txt {
+      font-size: 2rem;
+      font-weight: $base-font-bold;
+      line-height: 130%;
+      margin-top: .8rem;
+
+      @include sp {
+        font-size: 1.4rem;
+      }
+    }
+
+    &__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10rem;
+      padding-left: 4rem;
+
+      @include sp {
+        margin-top: 8rem;
+        padding-left: unset;
+      }
+    }
+
+    &__obj-img {
+      width: 30rem;
+
+      @include sp {
+        display: none;
+      }
+    }
+
+    &__feature-list {
+      width: 68.3rem;
+
+      @include sp {
+        width: 100%;
+      }
+    }
+
+    &__feature-item {
+      border-top: solid 1px color(gry,base);
+      padding: 4rem 0;
+
+      @include sp {
+        padding: 3.2rem 0;
+      }
+
+      &:last-of-type {
+        border-bottom: solid 1px color(gry,base);
+      }
+    }
+
+    &__feature-ttl {
+      font-size: 2.8rem;
+      font-weight: $base-font-bold;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 3.2rem;
+
+      @include sp {
+        font-size: 2rem;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .8rem;
+      }
+    }
+
+    &__feature-num {
+      color: color(org,base);
+      font-size: 2.4rem;
+    }
+
+    &__feature-txt {
+      font-size: 2rem;
+      font-weight: $base-font-bold;
+      line-height: 180%;
+      margin-top: 2rem;
+
+      @include sp {
+        font-size: 1.4rem;
+        margin-top: 1.2rem;
+      }
+    }
+
+    &__details {
+      &[open] {
+        .p-top-business__summary-btn {
+          &::before {
+            opacity: 0;
+          }
+        }
+      }
+    }
+
+    &__summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+      cursor: pointer;
+      position: relative;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      @include sp {
+        align-items: flex-start;
+      }
+    }
+
+    &__summary-btn {
+      display: inline-block;
+      width: 2.4rem;
+      height: 2.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        display: inline-block;
+        background-color: color(org,base);
+        flex-shrink: 0;
+      }
+
+      &::before {
+        width: .2rem;
+        height: 2.4rem;
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transition: opacity .5s;
+
+        @include sp {
+          height: 1.4rem;
+          left: 47%;
+        }
+      }
+
+      &::after {
+        width: 2.4rem;
+        height: .2rem;
+
+        @include sp {
+          width: 1.4rem;
+        }
+      }
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 1rem;
+      margin-top: 11rem;
+
+      @include sp {
+        grid-template-columns: repeat(1,1fr);
+        gap: 1.6rem;
+        margin-top: 4.6rem;
+      }
+    }
+
+    &__item {
+      width: 38rem;
+      height: 50.7rem;
+      border-radius: 3.2rem;
+      overflow: hidden;
+
+      @include sp {
+        width: 100%;
+        height: 20rem;
+        border-radius: 2rem;
+      }
+
+      img {
+        transition: transform .5s;
+      }
+    }
+
+    &__link {
+      &:hover {
+        opacity: 1;
+        
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

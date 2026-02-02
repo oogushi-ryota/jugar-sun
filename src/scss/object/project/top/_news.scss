@@ -1,0 +1,142 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-top-news {
+  & {
+    margin-top: 10rem;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 144rem;
+      height: 56.4rem;
+      background-image: url(../img/top/news/sec_obj.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: .3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      @include sp {
+        background-image: url(../img/top/news/sp/sec_obj.png);
+        width: 39rem;
+        height: 39.8rem;
+        top: 7.2rem;
+        left: 0;
+        opacity: 1;
+      }
+    }
+
+    &__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__slider {
+      margin-top: 8.9rem;
+
+      @include sp {
+        margin-top: 5.6rem;
+      }
+
+      .slick-list {
+        overflow: unset;
+      }
+    }
+
+    &__slider-item {
+      width: 44rem;
+      margin-right: 3rem;
+
+      @include sp {
+        width: 30rem;
+        margin-right: 2rem;
+      }
+    }
+
+    &__link {
+      width: 100%;
+
+      &:hover {
+        opacity: 1;
+
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &__thumb {
+      border-radius: 3.6rem;
+      aspect-ratio: 440 / 230;
+      overflow: hidden;
+
+      @include sp {
+        border-radius: 2.4rem;
+      }
+
+      img {
+        object-fit: cover;
+        transition: transform .5s;
+      }
+    }
+
+    &__time {
+      color: color(org,base);
+      font-size: 1.4rem;
+      font-weight: $base-font-black;
+      line-height: 150%;
+      display: block;
+      margin-top: 2rem;
+
+      @include sp {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__ttl {
+      color: $base-font-color;
+      font-size: 1.8rem;
+      font-weight: $base-font-black;
+      line-height: 180%;
+      margin-top: .8rem;
+      display: -webkit-inline-box;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+
+      @include sp {
+        font-size: 1.6rem;
+        line-height: 150%;
+      }
+    }
+    
+    &__slider-progress {
+      width: 112rem;
+      height: .2rem;
+      background-color: color(gry,base);
+      margin-top: 3.2rem;
+      position: relative;
+
+      @include sp {
+        width: 100%;
+      }
+    }
+
+    &__slider-progress-bar {
+      width: 0;
+      height: .2rem;
+      background-color: color(org,base);
+      transition: width .3s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

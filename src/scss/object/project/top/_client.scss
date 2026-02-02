@@ -1,0 +1,56 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-top-client {
+  & {
+    padding: 14rem 0;
+    overflow: hidden;
+
+    @include sp {
+      padding: 10rem 0;
+    }
+
+    &__marquee-area {
+      position: relative; 
+
+      &::before {
+        content: "";
+        width: 144rem;
+        height: 37.8rem;
+        background-image: url(../img/top/client/sec_obj.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: .3;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+
+        @include sp {
+          width: 39rem;
+          height: 20.3rem;
+          background-image: url(../img/top/client/sp/sec_obj.svg);
+        }
+      }
+    }
+
+    &__top-marquee {
+      margin-top: 10rem;
+
+      @include sp {
+        margin-top: 5.6rem;
+      }
+    }
+
+    &__bottom-marquee {
+      margin-top: 2rem;
+
+      @include sp {
+        margin-top: 1.6rem;
+      }
+    }
+  }
+}

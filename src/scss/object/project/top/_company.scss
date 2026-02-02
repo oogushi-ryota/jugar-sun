@@ -1,0 +1,60 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-top-company {
+  & {
+    background-image: url(../img/top/company/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 0;
+
+    @include sp {
+      padding: 2.6rem 0 3.2rem;
+    }
+
+    &__wrap {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 12.5rem;
+
+      @include sp {
+        gap: 0;
+        position: relative;
+      }
+    }
+
+    &__img {
+      width: 47rem;
+
+      @include sp {
+        width: 20rem;
+      }
+    }
+
+    &__txtblk {
+      width: 48.3rem;
+      padding-top: 16.6rem;
+
+      @include sp {
+        width: 17.5rem;
+        padding-top: 7.3rem;
+        position: absolute;
+        right: 0;
+        z-index: 2;
+      }
+    }
+
+    &__btn {
+      margin-top: 23.8rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      @include sp {
+        margin-top: 6.4rem;
+      }
+    }
+  }
+}

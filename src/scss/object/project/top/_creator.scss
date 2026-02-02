@@ -1,0 +1,36 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-top-creator {
+  & {
+    margin-top: 12rem;
+
+    @include sp {
+      margin-top: 8rem;
+    }
+
+    &__link {
+      display: block;
+      width: 100%;
+      height: 94.3rem;
+      overflow: hidden;
+
+      @include sp {
+        height: 25.5rem;
+      }
+
+      &:hover {
+        opacity: 1;
+        
+        .p-top-creator__img {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &__img {
+      transition: transform .5s;
+    }
+  }
+}

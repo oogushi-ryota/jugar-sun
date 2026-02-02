@@ -30,3 +30,31 @@ export function initAnchorSmoothScroll() {
   });
 }
 // ▲スムーススクロール処理
+
+// ▼TOPページのヘッダーの表示制御
+export function initTopHeaderToggleSP() {
+  const fv = document.querySelector('.p-top-fv');
+  const header = document.querySelector('.p-top-header');
+
+  if (!fv || !header) return;
+
+  // SPのみ
+  const mq = window.matchMedia('(max-width: 767px)');
+  if (!mq.matches) return;
+
+  const onScroll = () => {
+    const fvBottom = fv.getBoundingClientRect().bottom;
+
+    if (fvBottom <= 0) {
+      header.classList.add('is-fixed');
+    } else {
+      header.classList.remove('is-fixed');
+    }
+  };
+
+  // 初期判定（リロード対策）
+  onScroll();
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+}
+// ▲TOPページのヘッダーの表示制御

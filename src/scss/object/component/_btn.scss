@@ -1,0 +1,71 @@
+@use "global/variables" as *;
+@use "global/mixins" as *;
+@use "global/color" as *;
+
+.c-btn {
+  & {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    @include sp {
+      gap: 1.6rem;
+    }
+
+    &__txt {
+      font-size: 2rem;
+      font-weight: $base-font-bold;
+      line-height: 130%;
+
+      @include sp {
+        font-size: 1.6rem;
+      }
+
+      &--wt {
+        color: color(wt,base);
+      }
+
+      &--bk {
+        color: $base-font-color;
+      }
+      
+      &--org {
+        color: color(org,base);
+      }
+    }
+
+    &__obj {
+      display: inline-block;
+      width: 5.6rem;
+      height: 5.6rem;
+      border: solid 1px;
+      border-radius: 100vmax;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include sp {
+        width: 4.8rem;
+        height: 4.8rem;
+      }
+
+      &--wt {
+        border-color: color(wt,base);
+      }
+
+      &--bk {
+        border-color: $base-font-color;
+      }
+
+      &--org {
+        border-color: color(org,base);
+      }
+
+      svg {
+        width: 1.9rem;
+        height: .6rem;
+      }
+    }
+  }
+}
