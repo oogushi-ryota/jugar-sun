@@ -1,0 +1,129 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-marketing-support {
+  & {
+    margin-top: 14rem;
+    padding-bottom: 10rem;
+
+    @include sp {
+      margin-top: 4.8rem;
+    }
+
+    &__lead {
+      font-size: 2rem;
+      font-weight: $base-font-bold;
+      line-height: 200%;
+
+      @include sp {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__em {
+      color: color(org,base);
+      font-size: 3.6rem;
+      font-style: normal;
+      font-weight: $base-font-bold;
+      line-height: 150%;
+      text-align: center;
+      display: block;
+      background-color: color(org,soft);
+      border-radius: 1rem;
+      margin-top: 4.8rem;
+      padding: 3rem 0;
+
+      @include sp {
+        font-size: 2rem;
+        padding: 2.4rem 3rem;
+        border-radius: .4rem;
+        margin-top: 4rem;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      margin-top: 8rem;
+
+      @include sp {
+        margin-top: 4.8rem;
+      }
+    }
+
+    &__ttl {
+      font-size: 4rem;
+      font-weight: $base-font-bold;
+      line-height: 180%;
+      margin-top: 12rem;
+
+      @include sp {
+        font-size: 2rem;
+        margin-top: 2.4rem;
+      }
+    }
+
+    &__list {
+      margin-top: 6rem;
+
+      @include sp {
+        margin-top: 4rem;
+      }
+    }
+
+    &__item {
+      padding: 6rem 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 8rem;
+      border-top: solid 1px color(gry,base);
+
+      @include sp {
+        padding: 2rem 0;
+        gap: 1.6rem;
+      }
+
+      &:last-of-type {
+        border-bottom: solid 1px color(gry,base);
+      }
+    }
+
+    &__item-num {
+      color: color(org,base);
+      font-size: 2.4rem;
+      font-weight: $base-font-bold;
+      line-height: 130%;
+
+      @include sp {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__item-ttl {
+      font-size: 2.8rem;
+      font-weight: $base-font-bold;
+      line-height: 150%;
+
+      @include sp {
+        font-size: 2rem;
+      }
+    }
+
+    &__item-txt {
+      font-size: 2rem;
+      font-weight: $base-font-bold;
+      line-height: 200%;
+      margin-top: 3.2rem;
+    }
+
+    &__item-em {
+      font-size: 2.4rem;
+      font-weight: $base-font-bold;
+      font-style: normal;
+      line-height: 200%;
+      display: block;
+      margin-top: 3.2rem;
+    }
+  }
+}

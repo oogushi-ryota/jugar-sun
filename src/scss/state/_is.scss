@@ -12,17 +12,19 @@
 
 .js-nav {
   & {
-    transition: right .5s;
+    transition: opacity .3s;
 
     &.is-active {
-      right: 0;
+      opacity: 1;
+      visibility: visible;
     }
   }
 }
 
 .js-nav-btn {
   &.is-active {
-    .p-top-header__hamburger-line {
+    .p-top-header__hamburger-line,
+    .l-header__hamburger-line {
       position: absolute;
       top: 50%;
       left: 8%;
@@ -37,6 +39,12 @@
       &:nth-of-type(2) {
         width: 2.6rem;
         transform: rotate(-155deg);
+      }
+    }
+
+    .l-header__hamburger-line {
+      &:nth-of-type(2) {
+        width: 3rem;
       }
     }
   }

@@ -11,6 +11,7 @@
 @use "layout/header" as *;
 @use "layout/footer" as *;
 @use "layout/main" as *;
+@use "layout/under-page" as *;
 
 // ===================================
 // Component
@@ -19,8 +20,9 @@
 @use "object/component/top-secttl" as *;
 @use "object/component/contact-sec" as *;
 @use "object/component/btn" as *;
-@use "object/component/g-nav" as *;
-@use "object/component/secttl" as *;
+@use "object/component/under-ttl" as *;
+@use "object/component/service-mv" as *;
+@use "object/component/sec-ttl" as *;
 @use "object/component/marquee" as *;
 
 // ===================================
@@ -38,15 +40,19 @@
 @use "object/project/top/company" as *;
 @use "object/project/top/client" as *;
 
+// マーケティング
+@use "object/project/marketing/intro" as *;
+@use "object/project/marketing/strengths" as *;
+@use "object/project/marketing/collabo" as *;
+@use "object/project/marketing/p2c" as *;
+@use "object/project/marketing/movie" as *;
+@use "object/project/marketing/bg" as *;
+@use "object/project/marketing/support" as *;
+
 // ===================================
 // Utility
 // ===================================
-@use "object/utility/responsive" as *;
-
-// ===================================
-// Animation
-// ===================================
-// @use "animation/hamburger" as *;
+@use "object/utility/fc" as *;
 
 // ===================================
 // State

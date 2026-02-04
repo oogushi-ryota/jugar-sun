@@ -1,0 +1,111 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-marketing-p2c {
+  & {
+    padding: 10rem 0;
+
+    @include sp {
+      padding: 0 0 10rem;
+    }
+
+    &__blk {
+      margin-top: 8rem;
+
+      @include sp {
+        margin-top: 4.8rem;
+      }
+
+      & + & {
+        margin-top: 12rem;
+
+        @include sp {
+          margin-top: 6rem;
+        }
+      }
+    }
+
+    &__blk-ttl {
+      color: color(org,base);
+      font-size: 3.6rem;
+      font-weight: $base-font-black;
+      line-height: 150%;
+
+      @include sp {
+        font-size: 2rem;
+      }
+
+      & + .p-marketing-p2c__blk-wrap {
+        margin-top: 6rem;
+
+        @include sp {
+          margin-top: 2.4rem;
+        }
+      }
+    }
+
+    &__blk-ttl-s {
+      font-size: 2.4rem;
+
+      @include sp {
+        font-size: 1.4rem;
+      }
+    }
+
+    &__blk-wrap {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      @include sp {
+        flex-direction: column-reverse;
+        gap: 2.4rem;
+      }
+
+      & + & {
+        margin-top: 6rem;
+        flex-direction: row-reverse;
+
+        @include sp {
+          margin-top: 4.8rem;
+          flex-direction: column-reverse;
+        }
+      }
+    }
+
+    &__blk-txtarea {
+      width: 57.6rem;
+
+      @include sp {
+        width: 100%;
+      }
+    }
+
+    &__blk-txt {
+      font-size: 2rem;
+      font-weight: $base-font-regular;
+      line-height: 200%;
+
+      @include sp {
+        font-size: 1.5rem;
+      }
+
+      & + & {
+        margin-top: 1em;
+      }
+    }
+
+    &__blk-img {
+      width: 52.4rem;
+
+      @include sp {
+        width: 100%;
+      }
+
+      img {
+        border-radius: 1rem;
+      }
+    }
+  }
+}

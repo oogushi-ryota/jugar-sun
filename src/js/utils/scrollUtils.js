@@ -1,31 +1,61 @@
 // ▼スムーススクロール処理
 export function initAnchorSmoothScroll() {
-  const links = document.querySelectorAll('a[href*="#"]');
-  let headerHeight = 22;
+  /**
+   * CSS変数から header 高さを取得
+   */
+  const getHeaderHeight = () => {
+    const value = getComputedStyle(document.documentElement)
+      .getPropertyValue('--header-height');
+    return parseFloat(value) || 0;
+  };
 
-  // デバイス幅が375px以下の場合は7.1rem（通常は0rem）
-  if (window.innerWidth <= 375) {
-    headerHeight = 13;
+  /**
+   * スクロール処理
+   */
+  const scrollToTarget = (target, smooth = true) => {
+    if (!target) return;
+
+    const headerHeight = getHeaderHeight();
+    const offset =
+      target.getBoundingClientRect().top +
+      window.pageYOffset -
+      headerHeight;
+
+    window.scrollTo({
+      top: offset,
+      behavior: smooth ? 'smooth' : 'auto',
+    });
+  };
+
+  /**
+   * ① 別ページから /#xxx で遷移した場合
+   */
+  const pageHash = window.location.hash;
+  if (pageHash) {
+    const target = document.getElementById(pageHash.slice(1));
+    if (target) {
+      // ブラウザの自動アンカーを無効化
+      history.replaceState(null, '', window.location.pathname);
+
+      window.addEventListener('load', () => {
+        scrollToTarget(target, true);
+      });
+    }
   }
 
-  links.forEach(link => {
-    link.addEventListener("click", function (e) {
-      const href = this.getAttribute("href");
-      const targetId = href.split("#")[1];
-      const targetElement = document.getElementById(targetId);
+  /**
+   * ② 同一ページ内アンカー
+   */
+  document.querySelectorAll('a[href*="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      const hash = link.hash;
+      if (!hash) return;
 
-      if (targetElement) {
-        e.preventDefault();
+      const target = document.getElementById(hash.slice(1));
+      if (!target) return;
 
-        // ヘッダー高さをrem単位で調整してスクロール
-        const fontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
-        const offset = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight * fontSize;
-
-        window.scrollTo({
-          top: offset,
-          behavior: "smooth",
-        });
-      }
+      e.preventDefault();
+      scrollToTarget(target, true);
     });
   });
 }
@@ -58,3 +88,19 @@ export function initTopHeaderToggleSP() {
   window.addEventListener('scroll', onScroll, { passive: true });
 }
 // ▲TOPページのヘッダーの表示制御
+
+// ▼ページトップへ戻る
+export function initFooterBackToTop({
+  selector = '.js-back-btn',
+} = {}) {
+  const btn = document.querySelector(selector);
+  if (!btn) return;
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
+}
+// ▲ページトップへ戻る

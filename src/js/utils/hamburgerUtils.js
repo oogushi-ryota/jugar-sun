@@ -4,9 +4,8 @@ import $ from "jquery";
 export function initHamburgerMenu({
   navSelector = ".js-nav",
   btnSelector = ".js-nav-btn",
-  closeTargetSelector = ".p-top-header__link",
+  closeTargetSelector = ".p-top-header__link, .l-header__link",
   extraTargets = [],
-  lenisInstance = null,
 } = {}) {
   const $nav = $(navSelector);
   const $btn = $(btnSelector);
@@ -23,7 +22,7 @@ export function initHamburgerMenu({
     $extraEls.forEach($el => $el[method]("is-active"));
   }
 
-  // ハンバーガークリック
+  // ハンバーガーボタンクリック
   $btn.on("click", () => {
     const isOpening = !$nav.hasClass("is-active");
     toggleMenu(isOpening);
