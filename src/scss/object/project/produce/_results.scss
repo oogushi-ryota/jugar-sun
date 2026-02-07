@@ -1,0 +1,147 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-produce-results {
+  & {
+    margin-top: 20rem;
+
+    @include sp {
+      margin-top: 10rem;
+    }
+
+    &__ttl {
+      flex-shrink: 0;
+    }
+
+    &__head-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12rem;
+
+      @include sp {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2.8rem;
+      }
+    }
+
+    &__head-txt {
+      font-size: 2rem;
+      font-weight: $base-font-regular;
+      line-height: 200%;
+
+      @include sp {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__list {
+      margin-top: 8rem;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 8rem;
+
+      @include sp {
+        margin-top: 4.8rem;
+        grid-template-columns: repeat(1,1fr);
+        gap: 6rem;
+      }
+    }
+
+    &__img {
+      width: 54rem;
+
+      @include sp {
+        width: 100%;
+      }
+    }
+
+    &__creator {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-top: -6rem;
+      padding: 0 3.2rem 0 4rem;
+      position: relative;
+      z-index: 2;
+
+      @include sp {
+        margin-top: -4.4rem;
+        padding: 0 2rem 0;
+      }
+    }
+
+    &__creator-details {
+      padding-bottom: 2.6rem;
+
+      @include sp {
+        padding-bottom: .6rem;
+      }
+
+      &--nas {
+        position: relative;
+
+        &::before {
+          content: "YouTube登録者1300万人";
+          font-weight: $base-font-regular;
+          font-size: 1.4rem;
+          line-height: 200%;
+          position: absolute;
+          top: -1.6rem;
+          left: 0;
+
+          @include sp {
+            font-size: 1.2rem;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+
+    &__creator-name {
+      color: color(org,base);
+      font-size: 3.6rem;
+      font-weight: $base-font-bold;
+      line-height: 150%;
+
+      @include sp {
+        font-size: 2.4rem;
+      }
+    }
+
+    &__creator-event {
+      font-size: 2rem;
+      font-weight: $base-font-regular;
+      line-height: 200%;
+      margin-top: .8rem;
+
+      @include sp {
+        font-size: 1.5rem;
+        margin-top: 0;
+      }
+    }
+
+    &__creator-img {
+      width: 17.3rem;
+
+      @include sp {
+        width: 11rem;
+      }
+
+      &--tenntimu {
+        width: 21.5rem;
+
+        @include sp {
+          width: 13.3rem;
+        }
+      }
+
+      img {
+        border-radius: 1rem;
+        border: solid .2rem color(wt,base);
+      }
+    }
+  }
+}

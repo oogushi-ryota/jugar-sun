@@ -1,0 +1,50 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-produce-strengths {
+  & {
+    margin-top: 8rem;
+    padding: 4rem 0 8rem;
+
+    @include sp {
+      padding: 0;
+    }
+
+    &__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10rem;
+      padding-inline: 5rem 2rem;
+
+      @include sp {
+        margin-top: 4.8rem;
+        padding-inline: 0;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4.8rem;
+      }
+    }
+
+    &__img {
+      width: 30rem;
+
+      @include sp {
+        width: 20rem;
+      }
+    }
+
+    &__txt {
+      font-size: 2rem;
+      font-weight: $base-font-regular;
+      line-height: 200%;
+      width: 69rem;
+
+      @include sp {
+        font-size: 1.5rem;
+        width: 100%;
+      }
+    }
+  }
+}

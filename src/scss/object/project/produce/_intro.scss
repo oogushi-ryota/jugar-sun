@@ -1,0 +1,23 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-produce-intro {
+  & {
+    margin-top: 8.4rem;
+
+    @include sp {
+      margin-top: 4rem;
+    }
+
+    &__txt {
+      font-size: 2rem;
+      font-weight: $base-font-bold;
+      line-height: 200%;
+
+      @include sp {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

@@ -3,10 +3,12 @@ import gulpSass from "gulp-sass";
 import * as dartSass from "sass";
 import cleanCSS from "gulp-clean-css";
 import terser from "gulp-terser";
+import newer from "gulp-newer";
 import imagemin from "gulp-imagemin";
 import rename from "gulp-rename";
 import concat from "gulp-concat";
 import browserSyncLib from "browser-sync";
+import ssi from "gulp-ssi";
 import esbuild from "gulp-esbuild"; // ✅ `esbuild` を追加
 import webp from "gulp-webp"; // ✅ WebP変換用
 import sourcemaps from "gulp-sourcemaps";
@@ -47,6 +49,7 @@ function scripts() {
 // **画像圧縮**
 function images() {
   return src("src/img/**/*")
+    .pipe(newer("dist/assets/img"))
     .pipe(imagemin())
     .pipe(dest("dist/assets/img"));
 }
@@ -54,16 +57,27 @@ function images() {
 // **WebPに変換**
 function convertWebp() {
   return src("src/img/**/*.{jpg,jpeg,png}")
+    .pipe(
+      newer({
+        dest: "dist/assets/img",
+        ext: ".webp"
+      })
+    )
     .pipe(webp())
     .pipe(dest("dist/assets/img"));
 }
 
 // **HTMLコピー**
 function html() {
-  return src("src/html/**/*.html") // ✅ html/配下だけに限定
-    .pipe(dest("dist"))            // ✅ html/を基点にそのままdistへ
-    .pipe(browserSync.stream())
-    .on("end", browserSync.reload);
+  return src("src/html/**/*.html")
+    .pipe(
+      ssi({
+        root: "src",     // ← virtual="/includes/xxx.html" の基準
+        ext: ".html"     // 出力拡張子（ローカル用）
+      })
+    )
+    .pipe(dest("dist"))
+    .pipe(browserSync.stream());
 }
 
 // audio コピー
@@ -104,6 +118,7 @@ function serve() {
 
   // **HTMLコピー**
   watch("src/html/**/*.html", html);
+  watch("src/includes/**/*.html", html);
 
   // **WP連携（重要）: distに何か出力されたら、即 wp/assets に同期**
   watch("dist/assets/**/*", syncWp);

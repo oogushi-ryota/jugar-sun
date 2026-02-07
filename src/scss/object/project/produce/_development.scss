@@ -1,0 +1,41 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-produce-development {
+  & {
+    margin-top: 20rem;
+
+    @include sp {
+      margin-top: 10rem;
+    }
+
+    &__ttl {
+      flex-shrink: 0;
+    }
+
+    &__head-wrap {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 13.3rem;
+
+      @include sp {
+        flex-direction: column;
+        gap: 2.8rem;
+      }
+    }
+
+    &__head-txt {
+      font-size: 2rem;
+      font-weight: $base-font-regular;
+      line-height: 200%;
+      margin-top: 2rem;
+
+      @include sp {
+        font-size: 1.5rem;
+        margin-top: 0;
+      }
+    }
+  }
+}

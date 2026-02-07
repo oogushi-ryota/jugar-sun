@@ -1,0 +1,30 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-produce-portfolio {
+  & {
+    margin-top: 10rem;
+    overflow: hidden;
+
+    @include sp {
+      margin-top: 6rem;
+    }
+
+    &__marquee {
+      margin-top: 6rem;
+
+      @include sp {
+        margin-top: 3.2rem;
+      }
+
+      .c-marquee--produce-bottom {
+        margin-top: 6rem;
+
+        @include sp {
+          margin-top: 2.4rem;
+        }
+      }
+    }
+  }
+}

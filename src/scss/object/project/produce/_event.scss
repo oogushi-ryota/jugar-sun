@@ -1,0 +1,61 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-produce-event {
+  & {
+    margin-top: 12rem;
+
+    @include sp {
+      margin-top: 10rem;
+    }
+
+    &__wrap {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      @include sp {
+        flex-direction: column;
+        gap: 2.8rem;
+      }
+    }
+
+    &__ttl {
+      flex-shrink: 0;
+    }
+
+    &__txt {
+      font-size: 2rem;
+      font-weight: $base-font-regular;
+      line-height: 200%;
+      width: 77.8rem;
+      margin-top: 2rem;
+
+      @include sp {
+        font-size: 1.5rem;
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      margin-top: 6rem;
+
+      @include sp {
+        width: 39rem;
+        margin-top: 4.8rem;
+        margin-inline: calc(50% - 50vw);
+      }
+
+      img {
+        border-radius: 1rem;
+
+        @include sp {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}

@@ -49,10 +49,21 @@
 @use "object/project/marketing/bg" as *;
 @use "object/project/marketing/support" as *;
 
+// プロデュース
+@use "object/project/produce/intro" as *;
+@use "object/project/produce/strengths" as *;
+@use "object/project/produce/event" as *;
+@use "object/project/produce/fes" as *;
+@use "object/project/produce/portfolio" as *;
+@use "object/project/produce/results" as *;
+@use "object/project/produce/development" as *;
+@use "object/project/produce/shisha" as *;
+
 // ===================================
 // Utility
 // ===================================
 @use "object/utility/fc" as *;
+@use "object/utility/fw" as *;
 
 // ===================================
 // State

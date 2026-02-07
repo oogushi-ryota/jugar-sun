@@ -1,0 +1,212 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-produce-fes {
+  & {
+    margin-top: 16rem;
+
+    @include sp {
+      margin-top: 10rem;
+    }
+
+    &__blk {
+      margin-top: 6rem;
+
+      @include sp {
+        margin-top: 4.8rem;
+      }
+    }
+
+    &__blk-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10rem;
+      padding-left: 4rem;
+
+      @include sp {
+        display: block;
+        margin-top: 4.8rem;
+        padding-left: 0;
+      }
+    }
+
+    &__logo {
+      &--01 {
+        width: 22.4rem;
+      }
+
+      &--02 {
+        width: 23.8rem;
+      }
+    }
+
+    &__blk-txt {
+      font-size: 2rem;
+      font-weight: $base-font-regular;
+      line-height: 200%;
+
+      &--01 {
+        width: 82.6rem;
+      }
+
+      &--02 {
+        width: 84rem;
+      }
+
+      @include sp {
+        font-size: 1.5rem;
+        width: 100%;
+      }
+    }
+
+    &__img-wrap {
+      width: 120rem;
+      padding: 0 2rem;
+      margin: 0 auto;
+
+      @include sp {
+        width: 100%;
+        overflow-x: auto;
+      }
+    }
+
+    &__img-blk {
+      width: max-content;
+      margin-top: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3.5rem;
+
+      @include sp {
+        margin-top: 4.8rem;
+        gap: 2rem;
+      }
+    }
+
+    &__img-item {
+      flex-shrink: 0;
+
+      &--01 {
+        width: 38.7rem;
+
+        @include sp {
+          width: 17.3rem;
+        }
+      }
+
+      &--02 {
+        width: 44.4rem;
+
+        @include sp {
+          width: 19.9rem;
+        }
+      }
+
+      &--03 {
+        width: 25.8rem;
+
+        @include sp {
+          width: 11.5rem;
+        }
+      }
+    }
+
+    &__responsibility {
+      margin-top: 10rem;
+
+      @include sp {
+        margin-top: 6rem;
+      }
+    }
+
+    &__responsibility-lead {
+      font-size: 2.4rem;
+      font-weight: $base-font-bold;
+      line-height: 180%;
+
+      @include sp {
+        font-size: 2rem;
+      }
+    }
+
+    &__responsibility-list {
+      margin-top: 6rem;
+      border-top: solid 1px color(gry,base);
+      border-bottom: solid 1px color(gry,base);
+
+      @include sp {
+        margin-top: 4rem;
+      }
+    }
+
+    &__responsibility-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8rem;
+      padding: 6rem 0;
+
+      @include sp {
+        gap: 1.6rem;
+        padding: 2rem 0;
+      }
+
+      &:not(:last-of-type) {
+        border-bottom: solid 1px color(gry,base);
+      }
+    }
+
+    &__responsibility-num {
+      color: color(org,base);
+      font-size: 2.4rem;
+      font-weight: $base-font-bold;
+      line-height: 130%;
+
+      @include sp {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__responsibility-txtarea {
+      width: 105.1rem;
+
+      @include sp {
+        width: 100%;
+      }
+    }
+
+    &__responsibility-ttl {
+      font-size: 2.8rem;
+      font-weight: $base-font-bold;
+      line-height: 150%;
+
+      @include sp {
+        font-size: 2rem;
+      }
+    }
+
+    &__responsibility-txt {
+      font-size: 2rem;
+      font-weight: $base-font-bold;
+      line-height: 200%;
+      margin-top: 3.2rem;
+
+      @include sp {
+        display: none;
+      }
+    }
+
+    &__blk-flier {
+      width: 87.6rem;
+      margin: 12rem auto 0;
+
+      @include sp {
+        width: 32rem;
+        margin: 4.8rem auto 0;
+      }
+    }
+  }
+}
