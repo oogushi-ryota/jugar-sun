@@ -59,6 +59,16 @@
 @use "object/project/produce/development" as *;
 @use "object/project/produce/shisha" as *;
 
+// プロダクション
+@use "object/project/production/fv" as *;
+@use "object/project/production/intro" as *;
+@use "object/project/production/liver" as *;
+@use "object/project/production/strengths" as *;
+@use "object/project/production/affiliated" as *;
+@use "object/project/production/process" as *;
+@use "object/project/production/faq" as *;
+@use "object/project/production/feature" as *;
+
 // ===================================
 // Utility
 // ===================================

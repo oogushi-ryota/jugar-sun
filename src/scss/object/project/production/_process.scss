@@ -1,0 +1,166 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-production-process {
+  & {
+    margin-top: 17rem;
+
+    @include sp {
+      margin-top: 8rem;
+    }
+
+    &__wrap {
+      margin-top: 4rem;
+
+      @include sp {
+        margin-top: 4.8rem;
+      }
+    }
+
+    &__bubble {
+      width: 30.7rem;
+      height: 6.8rem;
+      background-color: color(org,soft);
+      border-radius: .8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-inline: auto;
+      position: relative;
+
+      @include sp {
+        height: 6.2rem;
+      }
+
+      &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 2.4rem solid transparent;
+        border-right: 2.4rem solid transparent;
+        border-top: 2rem solid color(org,soft); /* 色はここ */
+        position: absolute;
+        bottom: -2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+
+        @include sp {
+          border-top: 1.4rem solid color(org,soft); /* 色はここ */
+          bottom: -1.4rem;
+        }
+      }
+    }
+
+    &__bubble-txt {
+      font-size: 2.4rem;
+      font-weight: $base-font-bold;
+      line-height: 150%;
+
+      @include sp {
+        font-size: 2rem;
+      }
+
+      &--color {
+        color: color(org,base);
+      }
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 2.5rem;
+      margin-top: 5.2rem;
+      position: relative;
+
+      @include sp {
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+        margin-top: 4.6rem;
+      }
+
+      &::before {
+        content: "";
+        width: calc(116rem / 2);
+        height: .2rem;
+        background-color: color(org,base);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        z-index: -1;
+
+        @include sp {
+          width: .2rem;
+          height: calc(48.7rem / 2);
+        }
+      }
+    }
+
+    &__item {
+      height: 24.4rem;
+      padding: 4rem 3.4rem;
+      border: solid 1px color(gry,base);
+      border-radius: 1rem;
+
+      @include sp {
+        height: 14.9rem;
+        padding: 3.2rem 2.4rem;
+      }
+
+      &--01 {
+        background-color: $base-bg-color;
+      }
+
+      &--02 {
+        background-color: color(org,soft);
+      }
+
+      &--03 {
+        background-color: color(org,base);
+      }
+    }
+
+    &__item-num {
+      color: color(org,base);
+      font-size: 2rem;
+      font-weight: $base-font-bold;
+      line-height: 150%;
+
+      @include sp {
+        font-size: 1.8rem;
+      }
+
+      &--wt {
+        color: color(wt,base);
+      }
+    }
+
+    &__txt {
+      font-size: 2.8rem;
+      font-weight: $base-font-bold;
+      line-height: 150%;
+      margin-top: 1rem;
+
+      @include sp {
+        font-size: 2rem;
+        margin-top: 0;
+      }
+    }
+
+    &__btn-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 6rem;
+
+      @include sp {
+        margin-top: 4.8rem;
+      }
+    }
+  }
+}

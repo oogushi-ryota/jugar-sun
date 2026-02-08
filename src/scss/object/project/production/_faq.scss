@@ -1,0 +1,115 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-production-faq {
+  & {
+    margin-top: 20rem;
+
+    @include sp {
+      margin-top: 10rem;
+    }
+
+    &__list {
+      margin-top: 10rem;
+
+      @include sp {
+        margin-top: 4.8rem;
+      }
+    }
+
+    &__item {
+      padding: 6rem 0;
+      border-top: solid 1px color(gry,base);
+
+      @include sp {
+        padding: 2rem 0;
+      }
+
+      &:last-of-type {
+        border-bottom: solid 1px color(gry,base);
+      }
+    }
+
+    &__details {
+      &[open] {
+        .p-production-faq__summary-btn {
+          &::before {
+            opacity: 0;
+          }
+        }
+      }
+    }
+
+    &__summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+      position: relative;
+      cursor: pointer;
+
+      &::marker,
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+
+    &__summary-btn {
+      display: inline-block;
+      width: 3.6rem;
+      height: 3.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        display: inline-block;
+        background-color: color(org,base);
+        flex-shrink: 0;
+      }
+
+      &::before {
+        width: .2rem;
+        height: 1.95rem;
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transition: opacity .5s;
+      }
+
+      &::after {
+        width: 1.95rem;
+        height: .2rem;
+      }
+    }
+
+    &__ttl {
+      font-size: 2.4rem;
+      font-weight: $base-font-bold;
+      line-height: 150%;
+
+      @include sp {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__txt {
+      font-size: 2rem;
+      font-weight: $base-font-regular;
+      line-height: 200%;
+      margin-top: 3.2rem;
+
+      @include sp {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

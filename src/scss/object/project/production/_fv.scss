@@ -1,0 +1,13 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-production-fv {
+  & {
+    width: 100%;
+
+    &__video {
+      width: 100%;
+    }
+  }
+}
