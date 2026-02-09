@@ -72,6 +72,15 @@
 // パートナークリエイターズ
 @use "object/project/creators/cont" as *;
 
+// カンパニー
+@use "object/project/company/intro" as *;
+@use "object/project/company/mission" as *;
+@use "object/project/company/vision" as *;
+@use "object/project/company/value" as *;
+@use "object/project/company/join" as *;
+@use "object/project/company/message" as *;
+@use "object/project/company/info" as *;
+
 // ===================================
 // Utility
 // ===================================

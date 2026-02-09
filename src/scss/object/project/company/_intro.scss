@@ -1,0 +1,83 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-company-intro {
+  & {
+    margin-top: 12rem;
+    position: relative;
+    overflow: hidden;
+
+    @include sp {
+      margin-top: 6rem;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 60rem;
+      height: 59rem;
+      background-image: url(../img/company/intro/sec-obj.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: .9rem;
+      right: -26.6rem;
+
+      @include sp {
+        width: 26.5rem;
+        height: 26.1rem;
+        top: 5.3rem;
+        right: -11.7rem;
+      }
+    }
+
+    &__ttl {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 2rem;
+
+      @include sp {
+        gap: .8rem;
+      }
+    }
+
+    &__ttl-ja {
+      color: color(org,base);
+      font-size: 8.8rem;
+      font-weight: $base-font-black;
+      line-height: 150%;
+
+      @include sp {
+        font-size: 3.5rem;
+        white-space: nowrap;
+      }
+    }
+
+    &__ttl-en {
+      color: color(org,base);
+      font-size: 3.6rem;
+      font-weight: $base-font-bold;
+      line-height: 130%;
+
+      @include sp {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__txt {
+      font-size: 2rem;
+      font-weight: $base-font-bold;
+      line-height: 250%;
+      margin-top: 5.2rem;
+
+      @include sp {
+        font-size: 1.5rem;
+        line-height: 200%;
+        margin-top: 4rem;
+      }
+    }
+  }
+}

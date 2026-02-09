@@ -1,0 +1,85 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-company-vision {
+  & {
+    margin-top: 12rem;
+
+    @include sp {
+      margin-top: 8rem;
+    }
+
+    &__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: last baseline;
+      gap: 4rem;
+      margin-top: 6rem;
+
+      @include sp {
+        display: block;
+        margin-top: 4rem;
+      }
+    }
+
+    &__img {
+      width: 42rem;
+      flex-shrink: 0;
+      
+      img {
+        border-radius: 1rem;
+      }
+    }
+
+    &__txtarea {
+      @include sp {
+        background-image: url(../img/company/vision/vision_img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        margin-inline: calc(50% - 50vw);
+        padding: 4.8rem 2rem;
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-color: rgba($color: color(bk,base), $alpha: .4);
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+
+    &__ttl {
+      font-size: 2.8rem;
+      font-weight: $base-font-bold;
+      line-height: 150%;
+
+      @include sp {
+        color: color(wt,base);
+        font-size: 2.4rem;
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    &__txt {
+      font-size: 2rem;
+      font-weight: $base-font-regular;
+      line-height: 200%;
+      margin-top: 3.2rem;
+
+      @include sp {
+        color: color(wt,base);
+        font-size: 1.5rem;
+        margin-top: 2.4rem;
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+}

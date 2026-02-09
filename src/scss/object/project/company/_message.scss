@@ -1,0 +1,70 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-company-message {
+  & {
+    margin-top: 14rem;
+
+    @include sp {
+      margin-top: 10rem;
+    }
+
+    &__wrap {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8rem;
+      margin-top: 8rem;
+
+      @include sp {
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+        margin-top: 4.8rem;
+      }
+    }
+
+    &__img {
+      width: 44rem;
+      flex-shrink: 0;
+
+      @include sp {
+        width: 28rem;
+      }
+    }
+
+    &__ttl {
+      color: color(org,base);
+      font-size: 4rem;
+      font-weight: $base-font-bold;
+      line-height: 150%;
+
+      @include sp {
+        font-size: 2rem;
+      }
+    }
+
+    &__txt {
+      font-size: 2rem;
+      font-weight: $base-font-regular;
+      line-height: 200%;
+      margin-top: 4.8rem;
+
+      @include sp {
+        font-size: 1.5rem;
+        margin-top: 2.4rem;
+      }
+    }
+
+    &__name {
+      width: 20.3rem;
+      margin: 4rem 0 0 auto;
+
+      @include sp {
+        width: 16rem;
+        margin: 2rem 0 0 auto;
+      }
+    }
+  }
+}
