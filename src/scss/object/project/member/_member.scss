@@ -1,0 +1,15 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-member {
+  & {
+    &__ttl {
+      font-size: 6rem;
+
+      @include sp {
+        font-size: 2.8rem;
+      }
+    }
+  }
+}

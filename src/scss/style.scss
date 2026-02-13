@@ -86,6 +86,8 @@
 @use "object/project/news/details" as *;
 
 // メンバー
+@use "object/project/member/member" as *;
+@use "object/project/member/cont" as *;
 @use "object/project/member/details" as *;
 
 // ===================================
