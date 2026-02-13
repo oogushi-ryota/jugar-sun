@@ -119,6 +119,10 @@
         font-size: 1.5rem;
         padding: 1.6rem;
       }
+
+      &::placeholder {
+        color: color(gry,dark);
+      }
     }
 
     &__btn {

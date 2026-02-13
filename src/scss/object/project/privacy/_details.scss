@@ -1,0 +1,80 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-privacy-details {
+  & {
+    margin-top: 12rem;
+    padding-bottom: 10rem;
+
+    @include sp {
+      margin-top: 6rem;
+    }
+
+    &__inner {
+      width: 84rem;
+      margin: 0 auto;
+      padding: 0 2rem;
+
+      @include sp {
+        width: 100%;
+      }
+    }
+
+    &__txt {
+      font-size: 1.6rem;
+      font-weight: $base-font-regular;
+      line-height: 150%;
+
+      @include sp {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__list {
+      margin-top: 5.6rem;
+
+      @include sp {
+        margin-top: 3.2rem;
+      }
+    }
+
+    &__item {
+      &:not(:first-of-type) {
+        margin-top: 4rem;
+
+        @include sp {
+          margin-top: 2.4rem;
+        }
+      }
+    }
+
+    &__item-ttl {
+      font-size: 2rem;
+      font-weight: $base-font-bold;
+      line-height: 130%;
+
+      @include sp {
+        font-size: 1.8rem;
+      }
+
+      & + .p-privacy-details__txt {
+        margin-top: 1rem;
+      }
+    }
+
+    &__item-contact {
+      margin-top: 1.6rem;
+    }
+
+    &__txt-link {
+      color: $base-font-color;
+      text-decoration: underline;
+
+      &:hover {
+        opacity: 1;
+        text-decoration: unset;
+      }
+    }
+  }
+}
