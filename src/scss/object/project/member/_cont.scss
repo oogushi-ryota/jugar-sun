@@ -25,15 +25,21 @@
     &__link {
       &:hover {
         opacity: 1;
+        
+        img {
+          transform: scale(1.1);
+        }
       }
     }
 
     &__img {
       width: 100%;
       aspect-ratio: 360 / 360;
+      overflow: hidden;
 
       img {
         object-fit: cover;
+        transition: transform .5s;
       }
     }
 
