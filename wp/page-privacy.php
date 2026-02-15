@@ -1,0 +1,74 @@
+<?php
+/*
+Template Name: プライバシー
+*/
+?>
+  <?php get_header(); ?>
+
+  <main class="l-main l-under-page">
+    <div class="p-privacy">
+      <section class="c-under-mv">
+        <div class="c-inner">
+          <h1 class="c-under-ttl">
+            <span class="c-under-ttl__sub">-プライバシーポリシー</span>
+            <span class="c-under-ttl__lead">PRIVACY POLICY</span>
+          </h1>
+        </div>
+      </section>
+
+      <section class="p-privacy-details">
+        <div class="p-privacy-details__inner">
+          <p class="p-privacy-details__txt">株式会社Jugar Sun（以下、「当社」といいます。）は、個人情報の重要性を認識し、個人情報の保護に関する法律および関連法令を遵守するとともに、以下の方針に基づき、個人情報の適切な取扱いおよび管理に努めます。</p>
+          <ul class="p-privacy-details__list">
+            <li class="p-privacy-details__item">
+              <h2 class="p-privacy-details__item-ttl">個人情報の取得について</h2>
+              <p class="p-privacy-details__txt">当社は、適法かつ公正な手段により個人情報を取得いたします。当社が取得する個人情報には、氏名、会社名、メールアドレス、電話番号、住所、お問い合わせ内容その他サービス提供に必要な情報が含まれます。</p>
+            </li>
+            <li class="p-privacy-details__item">
+              <h2 class="p-privacy-details__item-ttl">利用目的</h2>
+              <p class="p-privacy-details__txt">当社は、取得した個人情報を、お問い合わせへの回答および必要なご連絡、サービスの提供ならびに関連情報のご案内、見積書や請求書の発行および契約管理、サービス向上のための分析・改善、ならびに法令に基づく対応のために利用いたします。これらの目的の範囲を超えて利用することはありません。</p>
+            </li>
+            <li class="p-privacy-details__item">
+              <h2 class="p-privacy-details__item-ttl">第三者提供について</h2>
+              <p class="p-privacy-details__txt">当社は、法令に基づく場合を除き、あらかじめ本人の同意を得ることなく、取得した個人情報を第三者に提供いたしません。ただし、人の生命、身体または財産の保護のために必要がある場合であって本人の同意を得ることが困難であるときなど、法令により認められる場合を除きます。</p>
+            </li>
+            <li class="p-privacy-details__item">
+              <h2 class="p-privacy-details__item-ttl">委託について</h2>
+              <p class="p-privacy-details__txt">当社は、業務遂行に必要な範囲において、個人情報の取扱いを外部事業者に委託する場合があります。その際は、個人情報が適切に管理されるよう、委託先に対し必要かつ適切な監督を行います。</p>
+            </li>
+            <li class="p-privacy-details__item">
+              <h2 class="p-privacy-details__item-ttl">安全管理措置</h2>
+              <p class="p-privacy-details__txt">当社は、個人情報への不正アクセス、漏えい、滅失、毀損などを防止するため、組織的・技術的に合理的な安全管理措置を講じ、個人情報の適切な管理に努めます。</p>
+            </li>
+            <li class="p-privacy-details__item">
+              <h2 class="p-privacy-details__item-ttl">個人情報の開示・訂正・削除等</h2>
+              <p class="p-privacy-details__txt">本人から自己の個人情報について開示、訂正、追加、削除、利用停止等の請求があった場合には、法令に従い、合理的な範囲で速やかに対応いたします。</p>
+            </li>
+            <li class="p-privacy-details__item">
+              <h2 class="p-privacy-details__item-ttl">法令遵守および見直し</h2>
+              <p class="p-privacy-details__txt">当社は、個人情報に関する法令および規範を遵守するとともに、本ポリシーの内容を適宜見直し、その改善に努めます。</p>
+            </li>
+            <li class="p-privacy-details__item">
+              <h2 class="p-privacy-details__item-ttl">お問い合わせ窓口</h2>
+              <p class="p-privacy-details__txt">本ポリシーに関するお問い合わせは、下記窓口までご連絡ください。</p>
+              <div class="p-privacy-details__item-contact">
+                <p class="p-privacy-details__txt">株式会社Jugar Sun</p>
+                <p class="p-privacy-details__txt">
+                  〒108-0023<br>
+                  東京都港区芝浦3-6-14 Expert Tamachi 5F
+                </p>
+                <p class="p-privacy-details__txt">
+                  <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="p-privacy-details__txt-link">お問い合わせ</a>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <?php get_template_part( 'parts/contact' ); ?>
+
+    </div>
+  </main>
+
+  <?php get_footer(); ?>

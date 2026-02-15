@@ -1,0 +1,366 @@
+<?php
+/*
+Template Name: マーケティング
+*/
+?>
+  <?php get_header(); ?>
+
+  <main class="l-main l-under-page">
+    <div class="p-marketing">
+      <section class="c-service-mv">
+        <div class="c-inner">
+          <div class="c-under-ttl">
+            <span class="c-under-ttl__sub">-SERVICE</span>
+          </div>
+        </div>
+        <h1 class="p-marketing__h1">
+          <picture class="c-service-mv__img">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/mv.webp" type="image/webp">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/mv.jpg" alt="マーケティング" width="1440" height="681">
+          </picture>
+        </h1>
+      </section>
+
+      <section class="p-marketing-intro">
+        <div class="p-marketing-intro__top">
+          <div class="c-inner">
+            <p class="p-marketing-intro__txt">
+              インフルエンサーマーケティングを主軸とした効果的なマーケティング戦略を構築することで、ビジネスの成長を支援します。<br>
+              クライアントのブランドと顧客を深く理解し、データ分析を通じて、ブランド価値向上と顧客との深い関係構築を目指した包括的なマーケティングソリューションを提供します。
+            </p>
+          </div>
+          <div class="p-marketing-intro__inner">
+            <div class="p-marketing-intro__wrap">
+              <picture class="p-marketing-intro__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/intro/intro_img01.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/intro/intro_img01.jpg" alt="" width="410" height="240" loading="lazy">
+              </picture>
+              <picture class="p-marketing-intro__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/intro/intro_img02.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/intro/intro_img02.jpg" alt="" width="410" height="240" loading="lazy">
+              </picture>
+              <picture class="p-marketing-intro__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/intro/intro_img03.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/intro/intro_img03.jpg" alt="" width="410" height="240" loading="lazy">
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-marketing-intro__bottom">
+          <div class="p-marketing-intro__inner">
+            <div class="p-marketing-intro__bottom-wrap">
+              <figure class="p-marketing-intro__bottom-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/intro/intro_img04.svg" alt="" width="540" height="515">
+              </figure>
+              <div class="p-marketing-intro__bottom-txtblk">
+                <h3 class="p-marketing-intro__bottom-ttl c-sec-ttl">
+                  <span class="p-marketing-intro__bottom-ttl-ja c-sec-ttl__ja">単純なタイアップでは<br class="sp">終わらせない</span>
+                </h3>
+                <p class="p-marketing-intro__bottom-txt">タイアップからP2C（Person to Consumer）まで、単に商品を訴求する広告ではなく、消費者の感情に訴えるストーリーを中心に据え、強力なブランディングを構築、エンゲージメントを最大化させクライアントのブランド全体を訴求することを目指します。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-marketing-strengths">
+        <div class="p-marketing-strengths__bg">
+          <div class="c-inner">
+            <div class="p-marketing-strengths__txtblk">
+              <h2 class="c-sec-ttl">
+                <span class="p-marketing-strengths__ttl-en c-sec-ttl__en">Strengths</span>
+                <span class="c-sec-ttl__ja">
+                  インフルエンサー領域における<br>
+                  JugarSunの強み
+                </span>
+              </h2>
+              <p class="p-marketing-strengths__txt">Jugar Sunは「パートナークリエイター方式」による専属サポートを行い、各クリエイターの個性やSNS特性を深く理解しています。その知見とともに、自社優先プロダクション型でも、単なる仲介エージェント型でもない、クライアントの目的や価値観に即した最適なクリエイターを提案できる”ハイブリッド型”を実現しています。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-marketing-collabo">
+        <div class="c-inner">
+          <h2 class="c-sec-ttl">
+            <span class="c-sec-ttl__en">Partner creator collaboration results</span>
+            <span class="c-sec-ttl__ja">
+              パートナークリエイタータイアップ実績
+              <span class="p-marketing-collabo__ttl-s">（一部）</span>
+            </span>
+          </h2>
+          <ul class="p-marketing-collabo__list">
+            <li class="p-marketing-collabo__item">
+              <h3 class="p-marketing-collabo__item-ttl">
+                株式会社Sparty<br>
+                - MEDULLA
+              </h3>
+              <picture class="p-marketing-collabo__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img01.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img01.jpg" alt="株式会社Sparty - MEDULLA" width="360" height="200" loading="lazy">
+              </picture>
+              <div class="p-marketing-collabo__btn">
+                <a href="#" class="p-marketing-collabo__btn-link">動画を見る</a>
+              </div>
+            </li>
+            <li class="p-marketing-collabo__item">
+              <h3 class="p-marketing-collabo__item-ttl">
+                株式会社ZERO TALENT<br>
+                - ゼロタレ
+              </h3>
+              <picture class="p-marketing-collabo__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img02.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img02.jpg" alt="株式会社ZERO TALENT - ゼロタレ" width="360" height="200" loading="lazy">
+              </picture>
+              <div class="p-marketing-collabo__btn">
+                <a href="#" class="p-marketing-collabo__btn-link">動画を見る</a>
+              </div>
+            </li>
+            <li class="p-marketing-collabo__item">
+              <h3 class="p-marketing-collabo__item-ttl">
+                ココネ株式会社<br>
+                - cocone
+              </h3>
+              <picture class="p-marketing-collabo__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img03.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img03.jpg" alt="ココネ株式会社 - cocone" width="360" height="200" loading="lazy">
+              </picture>
+              <div class="p-marketing-collabo__btn">
+                <a href="#" class="p-marketing-collabo__btn-link">動画を見る</a>
+              </div>
+            </li>
+            <li class="p-marketing-collabo__item">
+              <h3 class="p-marketing-collabo__item-ttl">
+                株式会社カウシェ<br>
+                - KAUCHE
+              </h3>
+              <picture class="p-marketing-collabo__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img04.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img04.jpg" alt="株式会社カウシェ - KAUCHE" width="360" height="200" loading="lazy">
+              </picture>
+              <div class="p-marketing-collabo__btn">
+                <a href="#" class="p-marketing-collabo__btn-link">動画を見る</a>
+              </div>
+            </li>
+            <li class="p-marketing-collabo__item">
+              <h3 class="p-marketing-collabo__item-ttl">
+                クラシエ株式会社<br>
+                ねるねるねるね
+              </h3>
+              <picture class="p-marketing-collabo__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img05.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img05.jpg" alt="クラシエ株式会社 - ねるねるねるね" width="360" height="200" loading="lazy">
+              </picture>
+              <div class="p-marketing-collabo__btn">
+                <a href="#" class="p-marketing-collabo__btn-link">動画を見る</a>
+              </div>
+            </li>
+            <li class="p-marketing-collabo__item">
+              <h3 class="p-marketing-collabo__item-ttl">
+                GMOインターネットグループ株式会社<br>
+                - お名前.com
+              </h3>
+              <picture class="p-marketing-collabo__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img06.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img06.jpg" alt="GMOインターネットグループ株式会社 - お名前.com" width="360" height="200" loading="lazy">
+              </picture>
+              <div class="p-marketing-collabo__btn">
+                <a href="#" class="p-marketing-collabo__btn-link">動画を見る</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="p-marketing-p2c">
+        <div class="c-inner">
+          <h2 class="c-sec-ttl">
+            <span class="c-sec-ttl__en">P2C Works</span>
+            <span class="c-sec-ttl__ja">P2C実績</span>
+          </h2>
+          <div class="p-marketing-p2c__blk">
+            <h3 class="p-marketing-p2c__blk-ttl">男塾：澁谷 優樹（大変身ちゃんねる）</h3>
+            <div class="p-marketing-p2c__blk-wrap">
+              <div class="p-marketing-p2c__blk-txtarea">
+                <p class="p-marketing-p2c__blk-txt">男塾は、20〜40代男性を対象に、外見・立ち居振る舞い・マインド・人間関係を総合的にサポートする男性向けトータルコーチングサービスです。</p>
+                <p class="p-marketing-p2c__blk-txt">YouTube大変身チャンネルで多くの男性の外見やコミュニケーションをプロデュースしてきた塾長・澁谷の経験をベースに、画一的なマニュアルではなく、一人ひとりの仕事や価値観に合った実践的なアドバイスを提供します。</p>
+              </div>
+              <picture class="p-marketing-p2c__blk-img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/p2c/p2c_img01.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/p2c/p2c_img01.jpg" alt="" width="524" height="295" loading="lazy">
+              </picture>
+            </div>
+            <div class="p-marketing-p2c__blk-wrap">
+              <div class="p-marketing-p2c__blk-txtarea">
+                <p class="p-marketing-p2c__blk-txt">YouTube大変身チャンネルで多くの男性の外見やコミュニケーションをプロデュースしてきた塾長・澁谷の経験をベースに、画一的なマニュアルではなく、一人ひとりの仕事や価値観に合った実践的なアドバイスを提供します。</p>
+                <p class="p-marketing-p2c__blk-txt">オンライン面談に加え、実際にお会いしてのスタイリングやヘアカットなども行い、「分かった」で終わらせず、「変わった」と実感できるところまで伴走を行います。</p>
+              </div>
+              <picture class="p-marketing-p2c__blk-img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/p2c/p2c_img02.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/p2c/p2c_img02.jpg" alt="" width="524" height="390" loading="lazy">
+              </picture>
+            </div>
+          </div>
+          <div class="p-marketing-p2c__blk">
+            <h3 class="p-marketing-p2c__blk-ttl">
+              漆山海音：P2C実績
+              <span class="p-marketing-p2c__blk-ttl-s">1331</span>
+            </h3>
+            <div class="p-marketing-p2c__blk-wrap">
+              <div class="p-marketing-p2c__blk-txtarea">
+                <p class="p-marketing-p2c__blk-txt">15人大家族の日常を配信している人気YouTubeチャンネル「漆ちゃんfamily」の長女・海音(かのん)と次女・柚杏(ゆあん)がディレクターを務める。</p>
+                <p class="p-marketing-p2c__blk-txt">
+                  交差する個性が、ひとつのスタイルに正反対の価値観や個性が出会い、交わったときに作られる特別な1着を。<br>
+                  「あとちょっとかわいくなりたい。」自分に。<br>
+                  個性が輝くあなただけの、唯一無二のスタイルをお届けします。
+                </p>
+              </div>
+              <picture class="p-marketing-p2c__blk-img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/p2c/p2c_img03.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/p2c/p2c_img03.jpg" alt="" width="524" height="295" loading="lazy">
+              </picture>
+            </div>
+            <div class="p-marketing-p2c__blk-wrap">
+              <div class="p-marketing-p2c__blk-txtarea">
+                <p class="p-marketing-p2c__blk-txt">
+                  “1331” という数字には、「新しい始まり」や「自分を信じる力」という意味が込められている。<br>
+                  見た目だけでなく、心までも美しく――。<br>
+                  1331を纏うことで、あなたの個性が輝く。そして毎日を特別に彩るその瞬間を「1331」とともに。
+                </p>
+              </div>
+              <picture class="p-marketing-p2c__blk-img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/p2c/p2c_img04.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/p2c/p2c_img04.jpg" alt="" width="524" height="295" loading="lazy">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-marketing-movie">
+        <div class="c-inner">
+          <h2 class="c-sec-ttl">
+            <span class="c-sec-ttl__en">Movie Works</span>
+            <span class="c-sec-ttl__ja">映像制作実績</span>
+          </h2>
+          <ul class="p-marketing-movie__list">
+            <li class="p-marketing-movie__item">
+              <picture class="p-marketing-movie__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img01.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img01.jpg" alt="" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-marketing-movie__item">
+              <picture class="p-marketing-movie__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img02.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img02.jpg" alt="" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-marketing-movie__item">
+              <picture class="p-marketing-movie__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img03.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img03.jpg" alt="" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-marketing-movie__item">
+              <picture class="p-marketing-movie__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img04.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img04.jpg" alt="" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-marketing-movie__item">
+              <picture class="p-marketing-movie__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img05.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img05.jpg" alt="" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-marketing-movie__item">
+              <picture class="p-marketing-movie__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img06.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img06.jpg" alt="" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-marketing-movie__item">
+              <picture class="p-marketing-movie__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img07.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img07.jpg" alt="" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-marketing-movie__item">
+              <picture class="p-marketing-movie__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img08.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img08.jpg" alt="" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+            <li class="p-marketing-movie__item">
+              <picture class="p-marketing-movie__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img09.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img09.jpg" alt="" width="360" height="210" loading="lazy">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="p-marketing-bg"></div>
+
+      <section class="p-marketing-support">
+        <div class="c-inner">
+          <p class="p-marketing-support__lead">SNSを通じて、クライアントのブランド価値を最大化し、ターゲット層とのエンゲージメントを深める戦略的なコンテンツプランニング、投稿スケジュールの管理、分析とエンゲージメント施策の実施まで、総合的なサポートを提供します。</p>
+          <em class="p-marketing-support__em pc">公式YouTube・TikTokの運用はJugar Sunにお任せを</em>
+          <picture class="p-marketing-support__img">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/support/support_img.webp" type="image/webp">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/support/support_img.jpg" alt="" width="1160" height="580" loading="lazy">
+          </picture>
+          <h2 class="p-marketing-support__ttl">
+            単なるアカウント運用では無く、<br>
+            クライアントの<span class="u-fc--org">“事業成果を生むメディア”</span>を共に構築する
+          </h2>
+          <ol class="p-marketing-support__list">
+            <li class="p-marketing-support__item">
+              <span class="p-marketing-support__item-num">01</span>
+              <div class="p-marketing-support__item-txtarea">
+                <h3 class="p-marketing-support__item-ttl">戦略設計・コンセプト構築</h3>
+                <p class="p-marketing-support__item-txt pc">
+                  クライアントの事業目標・ブランドポジション・ターゲット心理を深く分析し、<span class="u-fc--org">YouTube／TikTokを事業成長の戦略的チャネルとして設計</span>します。<br>
+                  競合リサーチやペルソナ策定、キーワード・トレンド分析をもとに、最も再現性高く成果を出せる<span class="u-fc--org">動画コンセプト・投稿設計・KPI構造を構築</span>します。
+                </p>
+                <em class="p-marketing-support__item-em pc">「バズらせる」ではなく、「ブランドを育てる」ための土台設計。</em>
+              </div>
+            </li>
+            <li class="p-marketing-support__item">
+              <span class="p-marketing-support__item-num">02</span>
+              <div class="p-marketing-support__item-txtarea">
+                <h3 class="p-marketing-support__item-ttl">クリエイティブ・コンテンツ制作</h3>
+                <p class="p-marketing-support__item-txt pc">
+                  戦略に基づいた<span class="u-fc--org">クリエイティブディレクション／台本設計／撮影〜編集</span>までを一貫支援。<br>
+                  プラットフォームのアルゴリズムと視聴行動データに基づき、離脱率を抑え、再生完了率・エンゲージメントを最大化する動画を制作します。<br>
+                  また、<span class="u-fc--org">サムネイル・タイトル設計・CTA設計</span>までデータドリブンで最適化。
+                </p>
+                <em class="p-marketing-support__item-em pc">見られる動画ではなく、「成果を生む動画」を量産するための制作体制。</em>
+              </div>
+            </li>
+            <li class="p-marketing-support__item">
+              <span class="p-marketing-support__item-num">03</span>
+              <div class="p-marketing-support__item-txtarea">
+                <h3 class="p-marketing-support__item-ttl">データ解析・PDCA運用</h3>
+                <p class="p-marketing-support__item-txt pc">
+                  YouTube Analytics・TikTok Insightsを用いて、<span class="u-fc--org">クリック率・視聴維持率・フォロワー転換率</span>などを継続的にモニタリング。<br>
+                  短期的なパフォーマンスだけでなく、中長期的なチャンネル成長を見据えた<span class="u-fc--org">アルゴリズム最適化・投稿改善PDCAを実施</span>します。<br>
+                  KPIの進捗に応じて企画や構成を柔軟にアップデートし、「運用」ではなく「資産形成」としてのメディア価値を高めます。
+                </p>
+                <em class="p-marketing-support__item-em pc">データを“記録”ではなく、“成長戦略”として扱う。</em>
+              </div>
+            </li>
+          </ol>
+          <em class="p-marketing-support__em sp">公式YouTube・TikTokの運用はJugar Sunにお任せを</em>
+        </div>
+      </section>
+
+      <?php get_template_part( 'parts/contact' ); ?>
+
+    </div>
+  </main>
+
+  <?php get_footer(); ?>

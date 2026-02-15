@@ -1,0 +1,469 @@
+<?php
+/*
+Template Name: プロダクション
+*/
+?>
+  <?php get_header(); ?>
+
+  <main class="l-main l-under-page">
+    <div class="p-production">
+      <section class="p-production-fv">
+        <video class="p-production-fv__video pc" src="<?php echo get_template_directory_uri(); ?>/assets/movie/production.mp4" autoplay muted loop playsinline></video>
+        <video class="p-production-fv__video sp" src="<?php echo get_template_directory_uri(); ?>/assets/movie/sp/production.mp4" autoplay muted loop playsinline></video>
+      </section>
+
+      <section class="p-production-intro">
+        <div class="c-inner">
+          <h1 class="c-under-ttl">
+            <span class="c-under-ttl__sub">-SERVICE</span>
+            <span class="c-under-ttl__lead">PRODUCTION</span>
+          </h1>
+          <div class="p-production-intro__wrap">
+            <picture class="p-production-intro__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/intro/logo.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/intro/logo.jpg" alt="α Rabbit" width="421" height="205" loading="lazy">
+            </picture>
+            <div class="p-production-intro__txtarea">
+              <h2 class="c-sec-ttl">
+                <span class="c-sec-ttl__ja">誰もが「輝く自分」に変われる世界へ</span>
+              </h2>
+              <p class="p-production-intro__txt">
+                α Rabbitは、TikTok公認の一次代理店としてライバーとして活動したい方々をサポートし、マネジメントする事務所です。<br>
+                空いた時間を有効活用して、自分の夢を追いながら収入を得ることができる環境を提供し、初心者からプロまで誰でもライバーとして成功できるサポートを行っています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-production-liver">
+        <div class="c-inner">
+          <h2 class="c-sec-ttl">
+            <span class="c-sec-ttl__en">What is a liver?</span>
+            <span class="c-sec-ttl__ja">ライバーってなに？</span>
+          </h2>
+          <div class="p-production-liver__wrap">
+            <p class="p-production-liver__txt">YouTube、Instagram、TikTokなどでライブ配信を行う人が急激に増えており、現在ではライブ配信が珍しいものではなく、日常的に広がる存在となっています。また、ライブ配信を本業にしている人や、ファンを増やして知名度を向上させるために配信している人、さらには空いている時間に趣味として配信を楽しんでいる人など、さまざまなライバー（配信者）が活動しています。</p>
+            <picture class="p-production-liver__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/liver/liver_img01.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/liver/liver_img01.jpg" alt="α Rabbit" width="1136" height="553" loading="lazy">
+            </picture>
+          </div>
+        </div>
+        <div class="p-production-liver__point">
+          <ol class="p-production-liver__point-list">
+            <li class="p-production-liver__point-item">
+              <picture class="p-production-liver__point-img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/liver/point_img01.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/liver/point_img01.jpg" alt="" width="480" height="360" loading="lazy">
+              </picture>
+              <div class="p-production-liver__point-txtarea">
+                <h3 class="p-production-liver__point-ttl">
+                  <span class="p-production-liver__point-num">POINT 01</span>
+                  「スマホひとつで、すぐに始められる世界」
+                </h3>
+                <p class="p-production-liver__point-txt">
+                  ライブ配信の魅力は「思い立った瞬間に行動できる」こと。<br>
+                  特別な機材や準備は不要で、スマホとインターネット環境さえあれば、今日からあなたもライバーとしての第一歩を踏み出せます。<br>
+                  αRabbitでは、配信デビュー前の不安解消から、配信スタート後の成長サポートまで、あなたの挑戦を一貫して支えます。
+                </p>
+              </div>
+            </li>
+            <li class="p-production-liver__point-item">
+              <picture class="p-production-liver__point-img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/liver/point_img02.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/liver/point_img02.jpg" alt="" width="480" height="360" loading="lazy">
+              </picture>
+              <div class="p-production-liver__point-txtarea">
+                <h3 class="p-production-liver__point-ttl">
+                  <span class="p-production-liver__point-num">POINT 02</span>
+                  「あなたの“好き”が報酬に変わる」
+                </h3>
+                <p class="p-production-liver__point-txt">
+                  歌う・話す・演奏する——配信のスタイルは自由。<br>
+                  ライブ配信アプリでは、あなたの魅力を応援するファンからギフト<br>
+                  （投げ銭）を受け取ることができ、自分らしさを発信しながら<br>
+                  収益化が可能です。<br>
+                  特別なスキルがなくても、あなたらしい言葉や表情が誰かの心を<br>
+                  動かします。αRabbitはその第一歩を後押しします。
+                </p>
+              </div>
+            </li>
+            <li class="p-production-liver__point-item">
+              <picture class="p-production-liver__point-img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/liver/point_img03.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/liver/point_img03.jpg" alt="" width="480" height="360" loading="lazy">
+              </picture>
+              <div class="p-production-liver__point-txtarea">
+                <h3 class="p-production-liver__point-ttl">
+                  <span class="p-production-liver__point-num">POINT 03</span>
+                  「配信をきっかけに夢を形に。」
+                </h3>
+                <p class="p-production-liver__point-txt">
+                  ライブ配信は、ただの発信手段ではありません。<br>
+                  自分の想いや才能を発信し続けることで、ファンが生まれ、チャンスが広がります。<br>
+                  αRabbitでは、配信を通じて新しい夢を叶える人を全力で応援しています。<br>
+                  あなたの可能性は、ここから無限に広がります。
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="p-production-strengths">
+        <div class="c-inner">
+          <h2 class="c-sec-ttl">
+            <span class="c-sec-ttl__en">Strengths</span>
+            <span class="c-sec-ttl__ja">α Rabbitの強み</span>
+          </h2>
+          <ol class="p-production-strengths__list">
+            <li class="p-production-strengths__item">
+              <span class="p-production-strengths__item-num pc">01</span>
+              <div class="p-production-strengths__item-txtarea">
+                <h3 class="p-production-strengths__item-ttl">
+                  <span class="p-production-strengths__item-num sp">01</span>
+                  専任のサポート体制
+                </h3>
+                <p class="p-production-strengths__item-txt">
+                  初めての方でも安心して始められるよう、一人ひとりにマネージャーがつき、配信の立ち上げから運用、分析までを伴走します。<br>
+                  配信スケジュールの設計、トークテーマの相談、配信中の改善点のフィードバックなど、あなたのペースに合わせて継続的にサポートします。
+                </p>
+              </div>
+            </li>
+            <li class="p-production-strengths__item">
+              <span class="p-production-strengths__item-num pc">02</span>
+              <div class="p-production-strengths__item-txtarea">
+                <h3 class="p-production-strengths__item-ttl">
+                  <span class="p-production-strengths__item-num sp">02</span>
+                  現役ライバーから学べるノウハウ
+                </h3>
+                <p class="p-production-strengths__item-txt">
+                  現役で活躍中のトップライバーが、リアルな経験をもとにアドバイス。<br>
+                  リスナーを惹きつける話し方や、ギフトをもらえる配信のコツ、ファンを増やすためのブランディングなど、実践的なノウハウを直接学ぶことができます。<br>
+                  経験ゼロでも「成果が出る配信スタイル」を身につけられる環境です。
+                </p>
+              </div>
+            </li>
+            <li class="p-production-strengths__item">
+              <span class="p-production-strengths__item-num pc">03</span>
+              <div class="p-production-strengths__item-txtarea">
+                <h3 class="p-production-strengths__item-ttl">
+                  <span class="p-production-strengths__item-num sp">03</span>
+                  報酬はライバーへ100％還元
+                </h3>
+                <p class="p-production-strengths__item-txt">
+                  αRabbitでは、ライバーの努力を正当に評価します。<br>
+                  報酬は運営側の手数料を差し引かず、100%ライバーへ還元。<br>
+                  透明性のある報酬システムで、安心して活動に集中できます。<br>
+                  頑張った分だけしっかり収益として返ってくる仕組みです。
+                </p>
+              </div>
+            </li>
+            <li class="p-production-strengths__item">
+              <span class="p-production-strengths__item-num pc">04</span>
+              <div class="p-production-strengths__item-txtarea">
+                <h3 class="p-production-strengths__item-ttl">
+                  <span class="p-production-strengths__item-num sp">04</span>
+                  オリジナルイベントの定期開催
+                </h3>
+                <p class="p-production-strengths__item-txt">
+                  配信者同士のつながりを深める交流イベントや、人気クリエイター・アーティストとのコラボ配信など、定期的にオリジナルイベントを開催しています。<br>
+                  ステージ出演や特別賞のチャンスもあり、モチベーションを高く保てます。
+                </p>
+              </div>
+            </li>
+            <li class="p-production-strengths__item">
+              <span class="p-production-strengths__item-num pc">05</span>
+              <div class="p-production-strengths__item-txtarea">
+                <h3 class="p-production-strengths__item-ttl">
+                  <span class="p-production-strengths__item-num sp">05</span>
+                  案件紹介やプロモーション支援
+                </h3>
+                <p class="p-production-strengths__item-txt">
+                  企業コラボ、広告案件、TikTokショップなど、あなたの配信活動を広げるチャンスを積極的にご紹介。<br>
+                  また、宣伝素材の作成やSNS運用のアドバイスなど、配信以外の面でもブランディングを全面的にサポートします。
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="p-production-affiliated">
+        <div class="c-inner">
+          <h2 class="c-sec-ttl">
+            <span class="c-sec-ttl__en">Affiliated liver</span>
+            <span class="c-sec-ttl__ja">所属ライバー</span>
+          </h2>
+          <div class="p-production-affiliated__img-wrap">
+            <picture class="p-production-affiliated__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img01.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img01.jpg" alt="α Rabbit" width="421" height="205" loading="lazy">
+            </picture>
+            <picture class="p-production-affiliated__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img02.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img02.jpg" alt="α Rabbit" width="421" height="205" loading="lazy">
+            </picture>
+            <picture class="p-production-affiliated__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img03.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img03.jpg" alt="α Rabbit" width="421" height="205" loading="lazy">
+            </picture>
+            <picture class="p-production-affiliated__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img04.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img04.jpg" alt="α Rabbit" width="421" height="205" loading="lazy">
+            </picture>
+            <picture class="p-production-affiliated__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img05.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img05.jpg" alt="α Rabbit" width="421" height="205" loading="lazy">
+            </picture>
+            <picture class="p-production-affiliated__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img06.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img06.jpg" alt="α Rabbit" width="421" height="205" loading="lazy">
+            </picture>
+            <picture class="p-production-affiliated__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img07.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img07.jpg" alt="α Rabbit" width="421" height="205" loading="lazy">
+            </picture>
+            <picture class="p-production-affiliated__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img08.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img08.jpg" alt="α Rabbit" width="421" height="205" loading="lazy">
+            </picture>
+            <picture class="p-production-affiliated__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img09.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img09.jpg" alt="α Rabbit" width="421" height="205" loading="lazy">
+            </picture>
+            <picture class="p-production-affiliated__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img10.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img10.jpg" alt="α Rabbit" width="421" height="205" loading="lazy">
+            </picture>
+            <picture class="p-production-affiliated__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img11.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img11.jpg" alt="α Rabbit" width="421" height="205" loading="lazy">
+            </picture>
+            <picture class="p-production-affiliated__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img12.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/affiliated/affiliated_img12.jpg" alt="α Rabbit" width="421" height="205" loading="lazy">
+            </picture>
+          </div>
+          <div class="p-production-affiliated__wrap">
+            <div class="p-production-affiliated__item">
+              <span class="p-production-affiliated__item-head">プロダクション月間ダイヤ数</span>
+              <em class="p-production-affiliated__item-em">
+                50,000,000
+                <span class="p-production-affiliated__item-s-txt">ダイヤ突破</span>
+              </em>
+            </div>
+            <div class="p-production-affiliated__item">
+              <span class="p-production-affiliated__item-head">TikTok Agencyが期待するプロダクションに送る</span>
+              <em class="p-production-affiliated__item-em p-production-affiliated__item-em--s">Potential Agency認定</em>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-production-process">
+        <div class="c-inner">
+          <h2 class="c-sec-ttl">
+            <span class="c-sec-ttl__en">Registration process</span>
+            <span class="c-sec-ttl__ja">登録の流れ</span>
+          </h2>
+          <div class="p-production-process__wrap">
+            <div class="p-production-process__bubble">
+              <span class="p-production-process__bubble-txt">
+                <span class="p-production-process__bubble-txt--color">3STEP</span>で完了
+              </span>
+            </div>
+            <ol class="p-production-process__list">
+              <li class="p-production-process__item p-production-process__item--01">
+                <span class="p-production-process__item-num">STEP1</span>
+                <p class="p-production-process__txt">LINEでお問い合わせ</p>
+              </li>
+              <li class="p-production-process__item p-production-process__item--02">
+                <span class="p-production-process__item-num">STEP2</span>
+                <p class="p-production-process__txt">
+                  現役ライバーによる<br>
+                  事前面談
+                </p>
+              </li>
+              <li class="p-production-process__item p-production-process__item--03">
+                <span class="p-production-process__item-num p-production-process__item-num--wt">STEP3</span>
+                <p class="p-production-process__txt">LIVE配信開始</p>
+              </li>
+            </ol>
+          </div>
+          <div class="p-production-process__btn-wrap">
+            <a href="" class="c-line-btn" target="_blank">まずはLINEで相談する！</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-production-faq">
+        <div class="c-inner">
+          <h2 class="c-sec-ttl">
+            <span class="c-sec-ttl__en">FAQ</span>
+            <span class="c-sec-ttl__ja">よくある質問</span>
+          </h2>
+          <ul class="p-production-faq__list">
+            <li class="p-production-faq__item">
+              <details class="p-production-faq__details js-accordion">
+                <summary class="p-production-faq__summary js-summary">
+                  <h3 class="p-production-faq__ttl">ライバーってどんなことするの？</h3>
+                  <span class="p-production-faq__summary-btn"></span>
+                </summary>
+                <p class="p-production-faq__txt js-accordion-details">
+                  α Rabbitでは「TikTokライブ」という機能を使って配信をしていただく活動になります。<br>
+                  ライブ配信アプリを通して、生配信を行います。配信の内容は、趣味や自分の話したいことで配信を行いリスナーさんとコミュニケーションを取っていきます。<br>
+                  特別な才能や機材がなくても誰でも今すぐに始められるのがライバー最大のメリットです!
+                </p>
+              </details>
+            </li>
+            <li class="p-production-faq__item">
+              <details class="p-production-faq__details js-accordion">
+                <summary class="p-production-faq__summary js-summary">
+                  <h3 class="p-production-faq__ttl">所属するのにお金はかかりますか？</h3>
+                  <span class="p-production-faq__summary-btn"></span>
+                </summary>
+                <p class="p-production-faq__txt js-accordion-details">所属に当たっての費用は一切発生しません!ただし、イベントに参加される場合の交通費等は、ライバーさん自身でご負担いただきます。</p>
+              </details>
+            </li>
+            <li class="p-production-faq__item">
+              <details class="p-production-faq__details js-accordion">
+                <summary class="p-production-faq__summary js-summary">
+                  <h3 class="p-production-faq__ttl">所属にあたっての条件はありますか?</h3>
+                  <span class="p-production-faq__summary-btn"></span>
+                </summary>
+                <p class="p-production-faq__txt js-accordion-details">
+                  スマホとインターネット環境さえあればどなたでも活動可能です!<br>
+                  自分のスキマ時間を活用して気軽に活動していただけます。少しでも興味がある場合はお気軽にご連絡ください!
+                </p>
+              </details>
+            </li>
+            <li class="p-production-faq__item">
+              <details class="p-production-faq__details js-accordion">
+                <summary class="p-production-faq__summary js-summary">
+                  <h3 class="p-production-faq__ttl">機材など準備をしないといけないものはありますか?</h3>
+                  <span class="p-production-faq__summary-btn"></span>
+                </summary>
+                <p class="p-production-faq__txt js-accordion-details">スマホがあれば、特にご用意いただくものはございません。ただし、ご自身のインターネット環境(各携帯会社との通信プランやWi-fi環境の有無)によっては、速度制限により配信があまり出来なくなってしまうことがある為、インターネット環境は整えていただくことをお薦めいたします。</p>
+              </details>
+            </li>
+            <li class="p-production-faq__item">
+              <details class="p-production-faq__details js-accordion">
+                <summary class="p-production-faq__summary js-summary">
+                  <h3 class="p-production-faq__ttl">他の仕事との掛け持ちは可能ですか?</h3>
+                  <span class="p-production-faq__summary-btn"></span>
+                </summary>
+                <p class="p-production-faq__txt js-accordion-details">可能です!ただし副業禁止規定などが心配な方は、あらかじめお勤め先に相談されることをお勧めします。</p>
+              </details>
+            </li>
+            <li class="p-production-faq__item">
+              <details class="p-production-faq__details js-accordion">
+                <summary class="p-production-faq__summary js-summary">
+                  <h3 class="p-production-faq__ttl">芸能事務所に所属していても可能ですか?</h3>
+                  <span class="p-production-faq__summary-btn"></span>
+                </summary>
+                <p class="p-production-faq__txt js-accordion-details">現在所属されている事務所に確認していただき許可をいただいてからのご登録であれば問題ございません!</p>
+              </details>
+            </li>
+            <li class="p-production-faq__item">
+              <details class="p-production-faq__details js-accordion">
+                <summary class="p-production-faq__summary js-summary">
+                  <h3 class="p-production-faq__ttl">時給保証はありますか?</h3>
+                  <span class="p-production-faq__summary-btn"></span>
+                </summary>
+                <p class="p-production-faq__txt js-accordion-details">時給制度はございません!ただし、ボーナスを獲得できるイベントをたくさんご用意しております!</p>
+              </details>
+            </li>
+            <li class="p-production-faq__item">
+              <details class="p-production-faq__details js-accordion">
+                <summary class="p-production-faq__summary js-summary">
+                  <h3 class="p-production-faq__ttl">顔出しは必須でしょうか?</h3>
+                  <span class="p-production-faq__summary-btn"></span>
+                </summary>
+                <p class="p-production-faq__txt js-accordion-details">
+                  顔出しは必須ではないですが、顔出ししているクリエイターの方が多く稼げる傾向にあるので、基本的には顔出しでの配信をおすすめしています!<br>
+                  ですが、ゲーム配信ライバー、ラジオ配信等では顔出ししなくてもよい配信スタイルも一部あります。
+                </p>
+              </details>
+            </li>
+            <li class="p-production-faq__item">
+              <details class="p-production-faq__details js-accordion">
+                <summary class="p-production-faq__summary js-summary">
+                  <h3 class="p-production-faq__ttl">ライブ配信・TikTok LIVE未経験ですが大丈夫でしょうか?</h3>
+                  <span class="p-production-faq__summary-btn"></span>
+                </summary>
+                <p class="p-production-faq__txt js-accordion-details">
+                  もちろん大丈夫です! α Rabbitの強みを活かしたイベントやサポート体制もありますので、不安に感じることはいつでもご相談ください。<br>
+                  α Rabbitに所属することで、配信のサポートもするので未経験の方でも安心してご応募ください!
+                </p>
+              </details>
+            </li>
+            <li class="p-production-faq__item">
+              <details class="p-production-faq__details js-accordion">
+                <summary class="p-production-faq__summary js-summary">
+                  <h3 class="p-production-faq__ttl">未成年でもライブ配信はできますか?</h3>
+                  <span class="p-production-faq__summary-btn"></span>
+                </summary>
+                <p class="p-production-faq__txt js-accordion-details">
+                  18才未満の方は、親権者の同意が必要になります。<br>
+                  それ以外の方は、特に条件はございません!
+                </p>
+              </details>
+            </li>
+            <li class="p-production-faq__item">
+              <details class="p-production-faq__details js-accordion">
+                <summary class="p-production-faq__summary js-summary">
+                  <h3 class="p-production-faq__ttl">地方でも大丈夫ですか?</h3>
+                  <span class="p-production-faq__summary-btn"></span>
+                </summary>
+                <p class="p-production-faq__txt js-accordion-details">大丈夫です!希望がない限り基本オンラインで完結なので、全国どこからでも活動可能です。</p>
+              </details>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="p-production-feature">
+        <div class="p-production-feature__inner">
+          <div class="p-production-feature__wrap">
+            <picture class="p-production-feature__img p-production-feature__img--left">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/feature/sp/feature_img01.webp" type="image/webp" media="(max-width: 767px)">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/feature/sp/feature_img01.jpg" media="(max-width: 767px)">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/feature/feature_img01.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/feature/feature_img01.jpg" alt="" width="348" height="480" loading="lazy">
+            </picture>
+            <div class="p-production-feature__txtarea">
+              <h2 class="p-production-feature__ttl">
+                こんな人に<br>
+                LIVE配信はオススメ！
+              </h2>
+              <p class="p-production-feature__txt">
+                スキマ時間を活用したい<br>
+                収入を増やしたい<br>
+                楽しく働きたい<br>
+                叶えたい夢がある<br>
+                有名になりたい<br>
+                自宅で簡単にスタートしたい<br>
+                発信力・影響力がほしい
+              </p>
+              <div class="p-production-feature__btn-wrap">
+                <a href="" class="c-line-btn" target="_blank">まずはLINEで相談する！</a>
+              </div>
+            </div>
+            <picture class="p-production-feature__img p-production-feature__img--right">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/feature/sp/feature_img02.webp" type="image/webp" media="(max-width: 767px)">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/feature/sp/feature_img02.jpg" media="(max-width: 767px)">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/production/feature/feature_img02.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/production/feature/feature_img02.jpg" alt="" width="387" height="477" loading="lazy">
+            </picture>
+          </div>
+        </div>
+      </section>
+      
+      <?php get_template_part( 'parts/contact' ); ?>
+
+    </div>
+  </main>
+
+  <?php get_footer(); ?>

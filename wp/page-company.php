@@ -1,0 +1,218 @@
+<?php
+/*
+Template Name: カンパニー
+*/
+?>
+  <?php get_header(); ?>
+
+  <main class="l-main l-under-page">
+    <div class="p-company">
+      <section class="c-under-mv">
+        <div class="c-inner">
+          <h1 class="c-under-ttl">
+            <span class="c-under-ttl__sub">-私たちについて</span>
+            <span class="c-under-ttl__lead">COMPANY</span>
+          </h1>
+        </div>
+      </section>
+
+      <section class="p-company-intro">
+        <div class="c-inner">
+          <div class="p-company-intro__ttl">
+            <span class="p-company-intro__ttl-ja">すべての人に“太陽”を</span>
+            <span class="p-company-intro__ttl-en">Sunshine for all</span>
+          </div>
+          <p class="p-company-intro__txt">
+            光をつくる。心を動かす。世界をつなぐ。<br>
+            それは、誰もが自分らしく輝ける世界をつくること。<br>
+            変化の時代に、「おもしろい」と「感動」を信じて。<br>
+            Jugar Sunは、エンターテイメントの力で、<br>
+            人の心に希望の光を灯します。
+          </p>
+        </div>
+      </section>
+
+      <section class="p-company-mission">
+        <div class="c-inner">
+          <h2 class="c-sec-ttl">
+            <span class="c-sec-ttl__en">Mission</span>
+            <span class="c-sec-ttl__ja">ミッション</span>
+          </h2>
+          <div class="p-company-mission__wrap">
+            <picture class="p-company-mission__img pc">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/mission/mission_img.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/mission/mission_img.jpg" alt="" width="400" height="380" loading="lazy">
+            </picture>
+            <div class="p-company-mission__txtarea">
+              <h4 class="p-company-mission__ttl">誰もが煌めきを感じられる世界の実現</h4>
+              <p class="p-company-mission__txt">
+                私たちのミッションである「誰もが煌めきを感じられる世界の実現」は、すべての人がその人らしい輝きを放ち、心から満たされる瞬間を実現することを目指しています。<br class="sp"><br class="sp">
+                この「煌めき」とは、人々が自分の可能性を発見し、個々の価値が認められ、互いに影響を与え合う中で生まれる感動の瞬間を意味しています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-company-vision">
+        <div class="c-inner">
+          <h2 class="c-sec-ttl">
+            <span class="c-sec-ttl__en">vision</span>
+            <span class="c-sec-ttl__ja">ビジョン</span>
+          </h2>
+          <div class="p-company-vision__wrap">
+            <picture class="p-company-vision__img pc">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/vision/vision_img.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/vision/vision_img.jpg" alt="" width="420" height="400" loading="lazy">
+            </picture>
+            <div class="p-company-vision__txtarea">
+              <h3 class="p-company-vision__ttl">"おもしろい"を絶えずアップグレードしエンタメの新時代を牽引する</h3>
+              <p class="p-company-vision__txt">
+                私たちのミッションは、「エンターテイメント」を通じて、これまでにない新しい価値を提供し、人々の日常に驚きと感動、そして笑顔をもたらすことです。<br class="sp">
+                この「唯一無二の"おもしろい"」とは、単なる娯楽に留まらず、体験した人々の心を揺さぶり、記憶に残る特別な価値を創り出すことを指します。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-company-value">
+        <div class="c-inner">
+          <h2 class="c-sec-ttl">
+            <span class="c-sec-ttl__en">vision</span>
+            <span class="c-sec-ttl__ja">ビジョン</span>
+          </h2>
+          <ol class="p-company-value__list">
+            <li class="p-company-value__item">
+              <span class="p-company-value__item-num pc">VALUE1</span>
+              <picture class="p-company-value__img p-company-value__img--01 pc">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/value/value_img01.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/value/value_img01.jpg" alt="" width="200" height="172" loading="lazy">
+              </picture>
+              <h3 class="p-company-value__ttl p-company-value__ttl--01">
+                プロとして結果に<br class="pc">
+                執念を持つ
+              </h3>
+              <p class="p-company-value__txt-en pc">Be professional and obsessed with results.</p>
+            </li>
+            <li class="p-company-value__item">
+              <span class="p-company-value__item-num pc">VALUE2</span>
+              <picture class="p-company-value__img p-company-value__img--02 pc">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/value/value_img02.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/value/value_img02.jpg" alt="" width="234" height="173" loading="lazy">
+              </picture>
+              <h3 class="p-company-value__ttl p-company-value__ttl--02">
+                当たり前に感謝し<br class="pc">
+                尊敬をする
+              </h3>
+              <p class="p-company-value__txt-en pc">Appreciate and respect the obvious.</p>
+            </li>
+            <li class="p-company-value__item">
+              <span class="p-company-value__item-num pc">VALUE3</span>
+              <picture class="p-company-value__img p-company-value__img--03 pc">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/value/value_img03.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/value/value_img03.jpg" alt="" width="174" height="193" loading="lazy">
+              </picture>
+              <h3 class="p-company-value__ttl p-company-value__ttl--03">めっっっちゃ熱狂する</h3>
+              <p class="p-company-value__txt-en pc">Be extremely enthusiastic.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="p-company-join">
+        <div class="p-company-join__bg">
+          <div class="c-inner">
+            <div class="p-company-join__wrap">
+              <h2 class="p-company-join__ttl">
+                <span class="p-company-join__ttl-en">JOIN US</span>
+                <span class="p-company-join__ttl-ja">採用について</span>
+              </h2>
+              <a href="https://www.wantedly.com/companies/company_4465451" class="p-company-join__btn"  target="_blank"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-company-message">
+        <div class="c-inner">
+          <h2 class="c-sec-ttl">
+            <span class="c-sec-ttl__en">Representative message</span>
+            <span class="c-sec-ttl__ja">代表メッセージ</span>
+          </h2>
+          <div class="p-company-message__wrap">
+            <picture class="p-company-message__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/message/message_img.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/message/message_img.jpg" alt="" width="440" height="520" loading="lazy">
+            </picture>
+            <div class="p-company-message__txtarea">
+              <h3 class="p-company-message__ttl">
+                誰もが「日常の小さな閃光」<br>
+                に気づける世界へ
+              </h3>
+              <p class="p-company-message__txt">
+                私は、よく周囲から「いつも楽しそう」「調子良さそうですね」と言われる事が多い中で、実際びっくりするくらい毎日が楽しいです。<br>
+                しかし、子供のころから現在までを振り返ると、とても順風満帆とは言えず挫折だらけで悔しい事ばかりでしたがその度にスポーツや映画、音楽などキラキラしたエンターテインメントに救われてきました。<br>
+                だからこそ、今こうしてこの業界で起業をし情熱を注げている事がとても幸せです。社名にもなっているJugar (ジュガール) という言葉は、私がバックパッカーでインドを横断した際に出会ったものです。<br>
+                Jugar（ジュガール）はJugaadという言葉の造語で、「どんな状況でも少しだけ発想と行動を変えるだけで何とかできる」という意味を持ちます。その場の状況に悲観せず、やりたい事を諦めずに、何とかするというマインドはインドだけでなく、この混沌とした移り変わりの激しいエンタメ業界やスタートアップ企業である僕らにも通ずると感じました。<br>
+                まだまだ若い会社ですが、誰もが日常の小さな閃光に気づき、日常が少しでも彩り華やかになるキッカケを作ることができたら嬉しいです。
+              </p>
+              <picture class="p-company-message__name">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/message/name.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/message/name.jpg" alt="" width="203" height="81" loading="lazy">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-company-info">
+        <div class="c-inner">
+          <h2 class="c-sec-ttl">
+            <span class="c-sec-ttl__en">Company</span>
+            <span class="c-sec-ttl__ja">企業情報</span>
+          </h2>
+          <table class="p-company-info__table">
+            <tbody class="p-company-info__tbody">
+              <tr class="p-company-info__tr">
+                <th class="p-company-info__th">会社名</th>
+                <td class="p-company-info__td">会社名</td>
+              </tr>
+              <tr class="p-company-info__tr">
+                <th class="p-company-info__th">本社所在地</th>
+                <td class="p-company-info__td">
+                  〒108-0023<br>
+                  東京都港区芝浦3-6-14 Expert Tamachi 5F
+                </td>
+              </tr>
+              <tr class="p-company-info__tr">
+                <th class="p-company-info__th">設立</th>
+                <td class="p-company-info__td">2022年6月</td>
+              </tr>
+              <tr class="p-company-info__tr">
+                <th class="p-company-info__th">資本金</th>
+                <td class="p-company-info__td">3,000,000円</td>
+              </tr>
+              <tr class="p-company-info__tr">
+                <th class="p-company-info__th">主要取引銀行</th>
+                <td class="p-company-info__td">三井住友銀行 / GMOあおぞらネット銀行</td>
+              </tr>
+              <tr class="p-company-info__tr">
+                <th class="p-company-info__th">従業員数</th>
+                <td class="p-company-info__td">20人*業務委託含む</td>
+              </tr>
+              <tr class="p-company-info__tr">
+                <th class="p-company-info__th">代表取締役</th>
+                <td class="p-company-info__td">澤田享佑</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <?php get_template_part( 'parts/contact' ); ?>
+
+    </div>
+  </main>
+
+  <?php get_footer(); ?>
