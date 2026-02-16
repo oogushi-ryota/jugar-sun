@@ -18,17 +18,15 @@ Template Name: メンバー一覧
 
       <section class="p-member-cont">
         <div class="c-inner">
+          <?php if ( have_posts() ) : ?>
           <ul class="p-member-cont__list">
-            <li class="p-member-cont__item">
-              <a href="" class="p-member-cont__link">
-                <figure class="p-member-cont__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/member_sample.jpg" alt="サムネイル" width="360" height="360">
-                </figure>
-                <span class="p-member-cont__name">澤田享佑</span>
-                <span class="p-member-cont__role">代表取締役CEO</span>
-              </a>
-            </li>
+            <?php while ( have_posts() ) : the_post(); ?>
+							<?php get_template_part( 'parts/thumbs-member' ); ?>
+						<?php endwhile; ?>
           </ul>
+          <?php else : ?>
+						<p class="p-news-archive__note">メンバーはまだありません。</p>
+					<?php endif; ?>
         </div>
       </section>
 

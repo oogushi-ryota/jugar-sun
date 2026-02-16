@@ -18,20 +18,16 @@ Template Name: ニュース一覧
 
       <section class="p-news-archive">
         <div class="c-inner">
+          <?php if ( have_posts() ) : ?>
           <ul class="p-news-archive__list">
-            <li class="p-news-archive__item">
-              <a href="" class="p-news-archive__link">
-                <figure class="p-news-archive__thumb">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample.jpg" alt="サムネイル" width="360" height="188">
-                </figure>
-                <time datetime="2024-12-02" class="p-news-archive__time">2024.12.02</time>
-                <p class="p-news-archive__ttl">弊社の感動とおもしろいが詰まった沖縄合宿を紹介します！</p>
-              </a>
-            </li>
+            <?php while ( have_posts() ) : the_post(); ?>
+							<?php get_template_part( 'parts/thumbs-news' ); ?>
+						<?php endwhile; ?>
           </ul>
-
+          <?php else : ?>
+						<p class="p-news-archive__note">ニュースはまだありません。</p>
+					<?php endif; ?>
           <?php get_template_part( 'parts/pagination' ); ?>
-          
         </div>
       </section>
 

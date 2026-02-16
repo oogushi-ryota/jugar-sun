@@ -18,44 +18,15 @@ Template Name: クリエイター一覧
 
       <section class="p-creators-cont">
         <div class="c-inner">
+          <?php if ( have_posts() ) : ?>
           <ul class="p-creators-cont__list">
-            <li class="p-creators-cont__item">
-              <figure class="p-creators-cont__thumb">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/creators_sample.jpg" alt="サムネイル" class="" width="360" height="360">
-              </figure>
-              <ul class="p-creators-cont__sns-list">
-                <li class="p-creators-cont__sns-item">
-                  <a href="" target="_blank" class="p-creators-cont__sns-link">
-                    <figure class="p-creators-cont__sns-icon">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/creators/sns_icon01.svg" alt="youtube" class="" width="48" height="48">
-                    </figure>
-                  </a>
-                </li>
-                <li class="p-creators-cont__sns-item">
-                  <a href="" target="_blank" class="p-creators-cont__sns-link">
-                    <figure class="p-creators-cont__sns-icon">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/creators/sns_icon02.svg" alt="Instagram" class="" width="48" height="48">
-                    </figure>
-                  </a>
-                </li>
-                <li class="p-creators-cont__sns-item">
-                  <a href="" target="_blank" class="p-creators-cont__sns-link">
-                    <figure class="p-creators-cont__sns-icon">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/creators/sns_icon03.svg" alt="TikTok" class="" width="48" height="48">
-                    </figure>
-                  </a>
-                </li>
-                <li class="p-creators-cont__sns-item">
-                  <a href="" target="_blank" class="p-creators-cont__sns-link">
-                    <figure class="p-creators-cont__sns-icon">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/creators/sns_icon04.svg" alt="X" class="" width="48" height="48">
-                    </figure>
-                  </a>
-                </li>
-              </ul>
-              <p class="p-creators-cont__name">漆ちゃんfamily</p>
-            </li>
+            <?php while ( have_posts() ) : the_post(); ?>
+							<?php get_template_part( 'parts/thumbs-creators' ); ?>
+						<?php endwhile; ?>
           </ul>
+          <?php else : ?>
+						<p class="p-news-archive__note">クリエイターはまだありません。</p>
+					<?php endif; ?>
         </div>
       </section>
 

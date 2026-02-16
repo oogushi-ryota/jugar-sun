@@ -60,17 +60,40 @@ Template Name: トップページ
               </span>
             </a>
           </div>
+
+          <?php
+          $news_query = new WP_Query([
+            'post_type'      => 'news',
+            'posts_per_page' => 10, // トップページでは最大10件
+          ]);
+          ?>
+          <?php if ( $news_query->have_posts() ) : ?>
+
           <div class="p-top-news__slider js-slider">
-            <div class="p-top-news__slider-item">
-              <a href="" class="p-top-news__link">
-                <figure class="p-top-news__thumb">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample.jpg" alt="サムネイル" width="440" height="230">
-                </figure>
-                <time datetime="2024-12-02" class="p-top-news__time">2024.12.02</time>
-                <p class="p-top-news__ttl">弊社の感動とおもしろいが詰まった沖縄合宿を紹介します！</p>
-              </a>
-            </div>
+            <?php while ( $news_query->have_posts() ) : $news_query->the_post(); ?>
+              <div class="p-top-news__slider-item">
+                <a href="<?php the_permalink(); ?>" class="p-top-news__link">
+                  <figure class="p-top-news__thumb">
+                    <?php if ( has_post_thumbnail() ) : ?>
+                      <?php the_post_thumbnail('full', [
+                        'alt'   => get_the_title(),
+                        'width' => 440,
+                        'height' => 230,
+                      ]); ?>
+                    <?php else : ?>
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/default-thumb.jpg" alt="サムネイル" width="440" height="230">
+                    <?php endif; ?>
+                  </figure>
+                  <time datetime="<?php echo get_the_date('c'); ?>" class="p-top-news__time"><?php echo get_the_date('Y.m.d'); ?></time>
+                  <p class="p-top-news__ttl"><?php the_title(); ?></p>
+                </a>
+              </div>
+            <?php endwhile; ?>
           </div>
+          <?php else : ?>
+            <p class="p-top-news__note">ニュースはまだありません。</p>
+          <?php endif; ?>
+          <?php wp_reset_postdata(); ?>
           <div class="p-top-news__slider-progress js-slider-progress">
             <div class="p-top-news__slider-progress-bar js-slider-progress__bar"></div>
           </div>

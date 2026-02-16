@@ -163,5 +163,19 @@
         opacity: .5;
       }
     }
+
+    .wpcf7-not-valid-tip {
+      font-size: 1.8rem;
+      font-weight: $base-font-medium;
+      margin-top: .5em;
+
+      @include sp {
+        font-size: 1.4rem;
+      }
+    }
+
+    .wpcf7-spinner {
+      display: none;
+    }
   }
 }

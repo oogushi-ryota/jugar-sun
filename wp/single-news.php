@@ -19,11 +19,19 @@ Template Name: ニュース詳細
       <section class="p-news-details">
         <div class="p-news-details__inner">
           <div class="p-news-details__head">
-            <time datetime="2024-12-02" class="p-news-details__time">2024.12.02</time>
-            <h2 class="p-news-details__ttl">弊社の感動とおもしろいが詰まった沖縄合宿を紹介します！</h2>
+            <time datetime="<?php echo get_the_date('c'); ?>" class="p-news-details__time"><?php echo get_the_date('Y.m.d'); ?></time>
+            <h2 class="p-news-details__ttl"><?php the_title(); ?></h2>
           </div>
           <figure class="p-news-details__thumb">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/news_sample.jpg" alt="サムネイル" width="1000" height="523">
+            <?php if ( has_post_thumbnail() ) : ?>
+              <?php the_post_thumbnail('full', [
+                'alt'   => get_the_title(),
+                'width' => 440,
+                'height' => 230,
+              ]); ?>
+            <?php else : ?>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/default-thumb.jpg" alt="サムネイル" width="440" height="230">
+            <?php endif; ?>
           </figure>
           <div class="p-news-details__cont">
             <?php the_content(); ?>
