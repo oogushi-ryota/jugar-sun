@@ -14,7 +14,7 @@
 		<span class="p-member-cont__name"><?php the_title(); ?></span>
 		<?php if ($position = SCF::get('position')) : ?>
 			<span class="p-member-cont__role">
-				<?php echo esc_html($position); ?>
+				<?php echo nl2br(esc_html($position)); ?>
 			</span>
 		<?php endif; ?>
 	</a>

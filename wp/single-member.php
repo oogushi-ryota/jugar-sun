@@ -57,7 +57,7 @@ Template Name: メンバー詳細
                   <?php endif; ?>
                   <?php if ($position = SCF::get('position')) : ?>
                     <span class="p-member-details__profile-name-role">
-                      <?php echo esc_html($position); ?>
+                      <?php echo nl2br(esc_html($position)); ?>
                     </span>
                   <?php endif; ?>
                 </div>
