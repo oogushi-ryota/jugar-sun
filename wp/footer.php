@@ -65,7 +65,7 @@
         </nav>
       </div>
       <div class="l-footer__bottom-cont">
-        <small class="l-footer__small">© 2025 Jugar Sun Inc.</small>
+        <small class="l-footer__small">© 2026 Jugar Sun Inc.</small>
         <button type="button" class="l-footer__back-btn js-back-btn">BACK <br class="sp">TO TOP</button>
       </div>
       <div class="l-footer__marquee">

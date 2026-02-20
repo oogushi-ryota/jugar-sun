@@ -25,11 +25,15 @@
     &__link {
       &:hover {
         opacity: 1;
-        
-        img {
-          transform: scale(1.1);
+
+        .p-member-cont__hover-img {
+          opacity: 1;
         }
       }
+    }
+
+    &__wrap {
+      position: relative;
     }
 
     &__img {
@@ -40,6 +44,21 @@
       img {
         object-fit: cover;
         transition: transform .5s;
+      }
+    }
+
+    &__hover-img {
+      width: 100%;
+      aspect-ratio: 360 / 360;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity .3s ease-out;
+
+      img {
+        object-fit: cover;
       }
     }
 

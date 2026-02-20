@@ -101,7 +101,7 @@ Template Name: マーケティング
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img01.jpg" alt="株式会社Sparty - MEDULLA" width="360" height="200" loading="lazy">
               </picture>
               <div class="p-marketing-collabo__btn">
-                <a href="#" class="p-marketing-collabo__btn-link">動画を見る</a>
+                <a href="https://www.youtube.com/watch?v=Pysb-YhrpxQ&t=1785s" class="p-marketing-collabo__btn-link" target="_blank">動画を見る</a>
               </div>
             </li>
             <li class="p-marketing-collabo__item">
@@ -114,7 +114,7 @@ Template Name: マーケティング
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img02.jpg" alt="株式会社ZERO TALENT - ゼロタレ" width="360" height="200" loading="lazy">
               </picture>
               <div class="p-marketing-collabo__btn">
-                <a href="#" class="p-marketing-collabo__btn-link">動画を見る</a>
+                <a href="https://www.youtube.com/watch?v=Co5N9oDTlRg&t=133s" class="p-marketing-collabo__btn-link" target="_blank">動画を見る</a>
               </div>
             </li>
             <li class="p-marketing-collabo__item">
@@ -127,7 +127,7 @@ Template Name: マーケティング
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img03.jpg" alt="ココネ株式会社 - cocone" width="360" height="200" loading="lazy">
               </picture>
               <div class="p-marketing-collabo__btn">
-                <a href="#" class="p-marketing-collabo__btn-link">動画を見る</a>
+                <a href="https://www.youtube.com/watch?v=i6sl4Zwav8M" class="p-marketing-collabo__btn-link" target="_blank">動画を見る</a>
               </div>
             </li>
             <li class="p-marketing-collabo__item">
@@ -140,7 +140,7 @@ Template Name: マーケティング
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img04.jpg" alt="株式会社カウシェ - KAUCHE" width="360" height="200" loading="lazy">
               </picture>
               <div class="p-marketing-collabo__btn">
-                <a href="#" class="p-marketing-collabo__btn-link">動画を見る</a>
+                <a href="https://www.youtube.com/watch?v=g3rmuvYogag&feature=youtu.be" class="p-marketing-collabo__btn-link" target="_blank">動画を見る</a>
               </div>
             </li>
             <li class="p-marketing-collabo__item">
@@ -153,7 +153,7 @@ Template Name: マーケティング
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img05.jpg" alt="クラシエ株式会社 - ねるねるねるね" width="360" height="200" loading="lazy">
               </picture>
               <div class="p-marketing-collabo__btn">
-                <a href="#" class="p-marketing-collabo__btn-link">動画を見る</a>
+                <a href="https://www.youtube.com/watch?v=ALf0U0Ojfy0" class="p-marketing-collabo__btn-link" target="_blank">動画を見る</a>
               </div>
             </li>
             <li class="p-marketing-collabo__item">
@@ -166,7 +166,7 @@ Template Name: マーケティング
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/collabo/collabo_img06.jpg" alt="GMOインターネットグループ株式会社 - お名前.com" width="360" height="200" loading="lazy">
               </picture>
               <div class="p-marketing-collabo__btn">
-                <a href="#" class="p-marketing-collabo__btn-link">動画を見る</a>
+                <a href="https://www.youtube.com/watch?v=H8Ma-RiF1cM&t=117s" class="p-marketing-collabo__btn-link" target="_blank">動画を見る</a>
               </div>
             </li>
           </ul>

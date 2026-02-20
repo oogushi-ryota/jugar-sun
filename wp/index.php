@@ -141,7 +141,10 @@ Template Name: トップページ
                     </h4>
                     <span class="p-top-business__summary-btn"></span>
                   </summary>
-                  <p class="p-top-business__feature-txt js-accordion-details">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                  <p class="p-top-business__feature-txt js-accordion-details">
+                    YouTubeやTikTok等複数プラットフォームに対応したマーケティング戦略を展開。<br>
+                    プラットフォームごとの特性を最大限に活かしたプロモーションを実施可能。
+                  </p>
                 </details>
               </li>
               <li class="p-top-business__feature-item">
@@ -153,7 +156,7 @@ Template Name: トップページ
                     </h4>
                     <span class="p-top-business__summary-btn"></span>
                   </summary>
-                  <p class="p-top-business__feature-txt js-accordion-details">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                  <p class="p-top-business__feature-txt js-accordion-details">自社タレントの紹介を優先するプロダクションでは無くクリエイターとの関係性が強固ではないエージェント型でも無い両方の強みを兼ね備えたハイブリッド型。</p>
                 </details>
               </li>
             </ol>
