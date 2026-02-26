@@ -56,26 +56,28 @@
         margin-top: 3.2rem;
         gap: 1.6rem;
       }
+    }
 
-      &::before {
-        content: "";
-        width: 92rem;
-        height: 26rem;
-        background-image: url(../img/top/about/ttl_obj.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        top: -3.2rem;
-        left: 6.6rem;
-        z-index: -1;
+    &__obj-wrap {
+      width: 92rem;
+      height: 26rem;
+      position: absolute;
+      top: -3.2rem;
+      left: 6.6rem;
+      z-index: -1;
 
-        @include sp {
-          width: 35rem;
-          height: 9.3rem;
-          top: 0;
-          left: 2rem;
-        }
+      @include sp {
+        width: 35rem;
+        height: 9.3rem;
+        top: -2rem;
+        left: 2rem;
       }
+    }
+
+    &__ttl-obj {
+      width: 100%;
+      height: auto;
+      animation: clipLoop 3s ease-in infinite;
     }
 
     &__ttl-ja {

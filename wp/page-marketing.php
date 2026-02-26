@@ -193,7 +193,6 @@ Template Name: マーケティング
             </div>
             <div class="p-marketing-p2c__blk-wrap">
               <div class="p-marketing-p2c__blk-txtarea">
-                <p class="p-marketing-p2c__blk-txt">YouTube大変身チャンネルで多くの男性の外見やコミュニケーションをプロデュースしてきた塾長・澁谷の経験をベースに、画一的なマニュアルではなく、一人ひとりの仕事や価値観に合った実践的なアドバイスを提供します。</p>
                 <p class="p-marketing-p2c__blk-txt">オンライン面談に加え、実際にお会いしてのスタイリングやヘアカットなども行い、「分かった」で終わらせず、「変わった」と実感できるところまで伴走を行います。</p>
               </div>
               <picture class="p-marketing-p2c__blk-img">

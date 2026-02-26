@@ -18,47 +18,82 @@ Template Name: プライバシー
 
       <section class="p-privacy-details">
         <div class="p-privacy-details__inner">
-          <p class="p-privacy-details__txt">株式会社Jugar Sun（以下、「当社」といいます。）は、個人情報の重要性を認識し、個人情報の保護に関する法律および関連法令を遵守するとともに、以下の方針に基づき、個人情報の適切な取扱いおよび管理に努めます。</p>
+          <p class="p-privacy-details__txt">株式会社Jugar Sun（以下「当社」といいます。）は、当社が提供する各種サービスにおいて取得する個人情報について、その重要性を認識し、「個人情報の保護に関する法律」および関連法令・ガイドラインを遵守し、以下の方針に基づき適切に取り扱います。</p>
           <ul class="p-privacy-details__list">
             <li class="p-privacy-details__item">
-              <h2 class="p-privacy-details__item-ttl">個人情報の取得について</h2>
-              <p class="p-privacy-details__txt">当社は、適法かつ公正な手段により個人情報を取得いたします。当社が取得する個人情報には、氏名、会社名、メールアドレス、電話番号、住所、お問い合わせ内容その他サービス提供に必要な情報が含まれます。</p>
+              <h2 class="p-privacy-details__item-ttl">第1条（個人情報の定義）</h2>
+              <p class="p-privacy-details__txt">本プライバシーポリシーにおいて「個人情報」とは、個人情報保護法に定める、生存する個人に関する情報であって、氏名、生年月日、住所、電話番号、メールアドレスその他の記述等により特定の個人を識別できる情報をいいます。</p>
             </li>
             <li class="p-privacy-details__item">
-              <h2 class="p-privacy-details__item-ttl">利用目的</h2>
-              <p class="p-privacy-details__txt">当社は、取得した個人情報を、お問い合わせへの回答および必要なご連絡、サービスの提供ならびに関連情報のご案内、見積書や請求書の発行および契約管理、サービス向上のための分析・改善、ならびに法令に基づく対応のために利用いたします。これらの目的の範囲を超えて利用することはありません。</p>
+              <h2 class="p-privacy-details__item-ttl">第2条（個人情報の取得方法）</h2>
+              <p class="p-privacy-details__txt">
+                当社は、以下の場合に適法かつ公正な手段により個人情報を取得いたします。<br>
+                お問い合わせフォームの送信<br>
+                サービス申込み・契約締結<br>
+                面談・打ち合わせ・イベント参加<br>
+                採用応募<br>
+                その他当社サービスの利用に関連する場合
+              </p>
             </li>
             <li class="p-privacy-details__item">
-              <h2 class="p-privacy-details__item-ttl">第三者提供について</h2>
-              <p class="p-privacy-details__txt">当社は、法令に基づく場合を除き、あらかじめ本人の同意を得ることなく、取得した個人情報を第三者に提供いたしません。ただし、人の生命、身体または財産の保護のために必要がある場合であって本人の同意を得ることが困難であるときなど、法令により認められる場合を除きます。</p>
+              <h2 class="p-privacy-details__item-ttl">第3条（利用目的）</h2>
+              <p class="p-privacy-details__txt">
+                当社は、取得した個人情報を以下の目的の範囲内で利用いたします。<br>
+                お問い合わせへの対応および必要なご連絡<br>
+                当社サービスの提供・運営・管理<br>
+                契約締結、請求書発行、支払管理等の業務遂行<br>
+                サービス改善およびマーケティング分析<br>
+                当社サービス・イベント・キャンペーン等のご案内<br>
+                採用選考および採用後の人事管理<br>
+                不正行為の防止および安全管理<br>
+                法令に基づく対応<br>
+                上記目的の範囲を超えて利用する場合には、事前に本人の同意を取得します。
+              </p>
             </li>
             <li class="p-privacy-details__item">
-              <h2 class="p-privacy-details__item-ttl">委託について</h2>
-              <p class="p-privacy-details__txt">当社は、業務遂行に必要な範囲において、個人情報の取扱いを外部事業者に委託する場合があります。その際は、個人情報が適切に管理されるよう、委託先に対し必要かつ適切な監督を行います。</p>
+              <h2 class="p-privacy-details__item-ttl">第4条（個人情報の第三者提供）</h2>
+              <p class="p-privacy-details__txt">
+                当社は、次の場合を除き、本人の同意を得ることなく個人情報を第三者に提供いたしません。<br>
+                法令に基づく場合<br>
+                人の生命、身体または財産の保護のため必要な場合<br>
+                公衆衛生の向上または児童の健全育成推進のため必要な場合<br>
+                国または地方公共団体等へ協力する必要がある場合
+              </p>
             </li>
             <li class="p-privacy-details__item">
-              <h2 class="p-privacy-details__item-ttl">安全管理措置</h2>
-              <p class="p-privacy-details__txt">当社は、個人情報への不正アクセス、漏えい、滅失、毀損などを防止するため、組織的・技術的に合理的な安全管理措置を講じ、個人情報の適切な管理に努めます。</p>
+              <h2 class="p-privacy-details__item-ttl">第5条（業務委託）</h2>
+              <p class="p-privacy-details__txt">当社は、サービス運営上必要な範囲において、個人情報の取扱いを外部事業者へ委託する場合があります。この場合、委託先に対し適切な監督を行います。</p>
             </li>
             <li class="p-privacy-details__item">
-              <h2 class="p-privacy-details__item-ttl">個人情報の開示・訂正・削除等</h2>
-              <p class="p-privacy-details__txt">本人から自己の個人情報について開示、訂正、追加、削除、利用停止等の請求があった場合には、法令に従い、合理的な範囲で速やかに対応いたします。</p>
+              <h2 class="p-privacy-details__item-ttl">第6条（安全管理措置）</h2>
+              <p class="p-privacy-details__txt">当社は、個人情報の漏えい、滅失、毀損、不正アクセス等を防止するため、組織的・人的・物理的・技術的安全管理措置を講じ、適切に管理いたします。</p>
             </li>
             <li class="p-privacy-details__item">
-              <h2 class="p-privacy-details__item-ttl">法令遵守および見直し</h2>
-              <p class="p-privacy-details__txt">当社は、個人情報に関する法令および規範を遵守するとともに、本ポリシーの内容を適宜見直し、その改善に努めます。</p>
+              <h2 class="p-privacy-details__item-ttl">第7条（個人情報の開示・訂正・削除等）</h2>
+              <p class="p-privacy-details__txt">本人より自己の個人情報について、開示、訂正、追加、削除、利用停止または第三者提供停止の請求があった場合、本人確認を行った上で、法令に基づき速やかに対応いたします。</p>
             </li>
             <li class="p-privacy-details__item">
-              <h2 class="p-privacy-details__item-ttl">お問い合わせ窓口</h2>
+              <h2 class="p-privacy-details__item-ttl">第8条（Cookie等の利用について）</h2>
+              <p class="p-privacy-details__txt">
+                当社ウェブサイトでは、サービス向上およびアクセス解析のため、Cookieその他類似技術を使用する場合があります。<br>
+                ユーザーはブラウザ設定によりCookieの受け取りを拒否することが可能です。
+              </p>
+            </li>
+            <li class="p-privacy-details__item">
+              <h2 class="p-privacy-details__item-ttl">第9条（プライバシーポリシーの変更）</h2>
+              <p class="p-privacy-details__txt">当社は、法令改正や事業内容の変更等に応じ、本ポリシーを随時見直し、必要に応じて改定することがあります。変更後の内容は当社ウェブサイトに掲載した時点で効力を生じます。</p>
+            </li>
+            <li class="p-privacy-details__item">
+              <h2 class="p-privacy-details__item-ttl">第10条（お問い合わせ窓口）</h2>
               <p class="p-privacy-details__txt">本ポリシーに関するお問い合わせは、下記窓口までご連絡ください。</p>
+            </li>
+            <li class="p-privacy-details__item">
               <div class="p-privacy-details__item-contact">
-                <p class="p-privacy-details__txt">株式会社Jugar Sun</p>
+                <p class="p-privacy-details__txt">株式会社ジュガールサン</p>
                 <p class="p-privacy-details__txt">
                   〒108-0023<br>
-                  東京都港区芝浦3-6-14 Expert Tamachi 5F
-                </p>
-                <p class="p-privacy-details__txt">
-                  <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="p-privacy-details__txt-link">お問い合わせ</a>
+                  東京都港区芝浦3-6-14 Expert Tamachi 5F<br>
+                  E-mail：corp@jugarsun.co.jp
                 </p>
               </div>
             </li>

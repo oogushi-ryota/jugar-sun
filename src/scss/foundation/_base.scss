@@ -2,17 +2,17 @@
 @use "global/mixins" as *;
 @use "global/color" as *;
 
-// // ▼アドビフォント_チラつき防止
-// html {
-//   visibility: hidden;
-//   /* ▼スクロールバーを無効化 (Firefox) */
-//   scrollbar-width: none;
-//   /* ▲スクロールバーを無効化 (Firefox) */
-// }
+// ▼アドビフォント_チラつき防止
+html {
+  visibility: hidden;
+  /* ▼スクロールバーを無効化 (Firefox) */
+  scrollbar-width: none;
+  /* ▲スクロールバーを無効化 (Firefox) */
+}
 
-// html.wf-active {
-//   visibility: visible;
-// }
+html.wf-active {
+  visibility: visible;
+}
 // ▲アドビフォント_チラつき防止
 
 html {

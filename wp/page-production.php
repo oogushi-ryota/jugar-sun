@@ -293,7 +293,7 @@ Template Name: プロダクション
             </ol>
           </div>
           <div class="p-production-process__btn-wrap">
-            <a href="" class="c-line-btn" target="_blank">まずはLINEで相談する！</a>
+            <a href="https://line.me/ti/p/%40759aceod" class="c-line-btn" target="_blank">まずはLINEで相談する！</a>
           </div>
         </div>
       </section>
@@ -448,7 +448,7 @@ Template Name: プロダクション
                 発信力・影響力がほしい
               </p>
               <div class="p-production-feature__btn-wrap">
-                <a href="" class="c-line-btn" target="_blank">まずはLINEで相談する！</a>
+                <a href="https://line.me/ti/p/%40759aceod" class="c-line-btn" target="_blank">まずはLINEで相談する！</a>
               </div>
             </div>
             <picture class="p-production-feature__img p-production-feature__img--right">
