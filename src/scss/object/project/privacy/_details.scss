@@ -31,6 +31,30 @@
       }
     }
 
+    &__txt-list {
+      margin-top: 1rem;
+      padding-left: 2.4rem;
+      list-style: disc;
+
+      & + .p-privacy-details__txt {
+        margin-top: 1rem;
+      }
+    }
+
+    &__txt-item {
+      font-size: 1.6rem;
+      font-weight: $base-font-regular;
+      line-height: 150%;
+
+      @include sp {
+        font-size: 1.5rem;
+      }
+
+      & + & {
+        margin-top: .6rem;
+      }
+    }
+
     &__list {
       margin-top: 5.6rem;
 

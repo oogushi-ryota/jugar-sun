@@ -26,39 +26,39 @@ Template Name: プライバシー
             </li>
             <li class="p-privacy-details__item">
               <h2 class="p-privacy-details__item-ttl">第2条（個人情報の取得方法）</h2>
-              <p class="p-privacy-details__txt">
-                当社は、以下の場合に適法かつ公正な手段により個人情報を取得いたします。<br>
-                お問い合わせフォームの送信<br>
-                サービス申込み・契約締結<br>
-                面談・打ち合わせ・イベント参加<br>
-                採用応募<br>
-                その他当社サービスの利用に関連する場合
-              </p>
+              <p class="p-privacy-details__txt">当社は、以下の場合に適法かつ公正な手段により個人情報を取得いたします。</p>
+              <ul class="p-privacy-details__txt-list">
+                <li class="p-privacy-details__txt-item">お問い合わせフォームの送信</li>
+                <li class="p-privacy-details__txt-item">サービス申込み・契約締結</li>
+                <li class="p-privacy-details__txt-item">面談・打ち合わせ・イベント参加</li>
+                <li class="p-privacy-details__txt-item">採用応募</li>
+                <li class="p-privacy-details__txt-item">その他当社サービスの利用に関連する場合</li>
+              </ul>
             </li>
             <li class="p-privacy-details__item">
               <h2 class="p-privacy-details__item-ttl">第3条（利用目的）</h2>
-              <p class="p-privacy-details__txt">
-                当社は、取得した個人情報を以下の目的の範囲内で利用いたします。<br>
-                お問い合わせへの対応および必要なご連絡<br>
-                当社サービスの提供・運営・管理<br>
-                契約締結、請求書発行、支払管理等の業務遂行<br>
-                サービス改善およびマーケティング分析<br>
-                当社サービス・イベント・キャンペーン等のご案内<br>
-                採用選考および採用後の人事管理<br>
-                不正行為の防止および安全管理<br>
-                法令に基づく対応<br>
-                上記目的の範囲を超えて利用する場合には、事前に本人の同意を取得します。
-              </p>
+              <p class="p-privacy-details__txt">当社は、取得した個人情報を以下の目的の範囲内で利用いたします。</p>
+              <ul class="p-privacy-details__txt-list">
+                <li class="p-privacy-details__txt-item">お問い合わせへの対応および必要なご連絡</li>
+                <li class="p-privacy-details__txt-item">当社サービスの提供・運営・管理</li>
+                <li class="p-privacy-details__txt-item">契約締結、請求書発行、支払管理等の業務遂行</li>
+                <li class="p-privacy-details__txt-item">サービス改善およびマーケティング分析</li>
+                <li class="p-privacy-details__txt-item">当社サービス・イベント・キャンペーン等のご案内</li>
+                <li class="p-privacy-details__txt-item">採用選考および採用後の人事管理</li>
+                <li class="p-privacy-details__txt-item">不正行為の防止および安全管理</li>
+                <li class="p-privacy-details__txt-item">法令に基づく対応</li>
+              </ul>
+              <p class="p-privacy-details__txt">上記目的の範囲を超えて利用する場合には、事前に本人の同意を取得します。</p>
             </li>
             <li class="p-privacy-details__item">
               <h2 class="p-privacy-details__item-ttl">第4条（個人情報の第三者提供）</h2>
-              <p class="p-privacy-details__txt">
-                当社は、次の場合を除き、本人の同意を得ることなく個人情報を第三者に提供いたしません。<br>
-                法令に基づく場合<br>
-                人の生命、身体または財産の保護のため必要な場合<br>
-                公衆衛生の向上または児童の健全育成推進のため必要な場合<br>
-                国または地方公共団体等へ協力する必要がある場合
-              </p>
+              <p class="p-privacy-details__txt">当社は、次の場合を除き、本人の同意を得ることなく個人情報を第三者に提供いたしません。</p>
+              <ul class="p-privacy-details__txt-list">
+                <li class="p-privacy-details__txt-item">法令に基づく場合</li>
+                <li class="p-privacy-details__txt-item">人の生命、身体または財産の保護のため必要な場合</li>
+                <li class="p-privacy-details__txt-item">公衆衛生の向上または児童の健全育成推進のため必要な場合</li>
+                <li class="p-privacy-details__txt-item">国または地方公共団体等へ協力する必要がある場合</li>
+              </ul>
             </li>
             <li class="p-privacy-details__item">
               <h2 class="p-privacy-details__item-ttl">第5条（業務委託）</h2>
