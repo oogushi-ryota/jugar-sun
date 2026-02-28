@@ -213,12 +213,12 @@ Template Name: トップページ
 
       <section class="p-top-works">
         <div class="c-inner">
-          <div class="p-top-news__wrap">
+          <div class="p-top-works__wrap">
             <h2 class="c-top-secttl">
               <span class="c-top-secttl__en c-top-secttl__en--bk">WORKS</span>
               <span class="c-top-secttl__ja c-top-secttl__ja--org">実績</span>
             </h2>
-            <a href="#" class="c-btn">
+            <a href="<?php echo esc_url( home_url( '/works/' ) ); ?>" class="c-btn">
               <span class="c-btn__txt c-btn__txt--org">VIEW ALL</span>
               <span class="c-btn__obj c-btn__obj--org">
                 <svg width="21" height="6" viewBox="0 0 21 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -227,62 +227,37 @@ Template Name: トップページ
               </span>
             </a>
           </div>
-          <ul class="p-top-works__list">
-            <li class="p-top-works__item">
-              <picture class="p-top-works__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img01.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img01.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-top-works__item">
-              <picture class="p-top-works__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img02.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img02.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-top-works__item">
-              <picture class="p-top-works__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img03.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img03.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-top-works__item">
-              <picture class="p-top-works__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img04.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img04.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-top-works__item">
-              <picture class="p-top-works__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img05.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img05.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-top-works__item">
-              <picture class="p-top-works__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img06.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img06.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-top-works__item">
-              <picture class="p-top-works__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img07.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img07.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-top-works__item">
-              <picture class="p-top-works__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img08.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img08.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-top-works__item">
-              <picture class="p-top-works__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img09.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/works_img09.jpg" alt="サムネイル" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-          </ul>
+
+          <?php
+          $works_query = new WP_Query([
+            'post_type'      => 'works',
+            'posts_per_page' => 9, // トップページでは最大9件
+          ]);
+          ?>
+          <?php if ( $works_query->have_posts() ) : ?>
+            <ul class="p-top-works__list">
+              <?php while ( $works_query->have_posts() ) : $works_query->the_post(); ?>
+                <li class="p-top-works__item">
+                  <a href="<?php the_permalink(); ?>" class="p-top-works__link">
+                    <figure class="p-top-works__img">
+                      <?php if ( has_post_thumbnail() ) : ?>
+                        <?php the_post_thumbnail('full', [
+                          'alt'   => get_the_title(),
+                          'width' => 360,
+                          'height' => 210,
+                        ]); ?>
+                      <?php else : ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/default-thumb.jpg" alt="サムネイル" width="360" height="210">
+                      <?php endif; ?>
+                    </figure>
+                  </a>
+                </li>
+              <?php endwhile; ?>
+            </ul>
+          <?php else : ?>
+            <p class="p-top-works__note">実績はまだありません。</p>
+          <?php endif; ?>
+          <?php wp_reset_postdata(); ?>
         </div>
       </section>
 

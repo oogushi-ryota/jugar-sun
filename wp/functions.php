@@ -234,4 +234,40 @@ add_action('pre_get_posts', function($query) {
     $query->set('posts_per_page', -1); // 1ページあたり全件表示
   }
 });
+
+/*-------------------------------------------------
+  カスタム投稿タイプ：実績
+-------------------------------------------------*/
+add_action('init', function() {
+  register_post_type('works', [
+    'labels' => [
+      'name'               => '実績',
+      'singular_name'      => '実績',
+      'menu_name'          => '実績',
+      'name_admin_bar'     => '実績',
+      'add_new'            => '新規追加',
+      'add_new_item'       => '新規実績を追加',
+      'edit_item'          => '実績を編集',
+      'new_item'           => '新規実績',
+      'view_item'          => '実績を表示',
+      'search_items'       => '実績を検索',
+      'not_found'          => '実績が見つかりませんでした',
+      'not_found_in_trash' => 'ゴミ箱に実績はありません',
+      'all_items'          => '実績一覧',
+    ],
+    'public' => true,
+    'menu_position' => 5,
+    'has_archive' => true,
+    'rewrite' => ['slug' => 'works'],
+    'supports' => ['title', 'editor', 'thumbnail'],
+    'show_in_rest' => false, // Gutenbergを無効化（クラシックエディタで編集）
+  ]);
+});
+
+// 実績投稿のアーカイブページの最大表示件数
+add_action('pre_get_posts', function($query) {
+  if (!is_admin() && $query->is_main_query() && is_post_type_archive('works')) {
+    $query->set('posts_per_page', 9); // 1ページあたり9件表示
+  }
+});
 ?>

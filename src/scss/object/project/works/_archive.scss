@@ -2,7 +2,7 @@
 @use "./global/mixins" as *;
 @use "./global/color" as *;
 
-.p-news-archive {
+.p-works-archive {
   & {
     margin-top: 12rem;
     padding-bottom: 14rem;
@@ -35,17 +35,17 @@
 
     &__thumb {
       width: 36rem;
-      border-radius: 3rem;
-      aspect-ratio: 360 / 188;
+      border-radius: 1rem;
+      aspect-ratio: 360 / 210;
       overflow: hidden;
 
       @include sp {
         width: 100%;
-        aspect-ratio: 350 / 183;
+        aspect-ratio: 173 / 101;
       }
 
       img {
-        border-radius: 3rem;
+        border-radius: 1rem;
         object-fit: cover;
         transition: transform .5s;
       }

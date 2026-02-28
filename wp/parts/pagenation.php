@@ -15,7 +15,7 @@ $pages = paginate_links( array(
 ) );
 
 if ( is_array( $pages ) ) {
-	echo '<nav class="p-news-archive__pagination" aria-label="ページネーション">';
+	echo '<nav class="c-pagenation" aria-label="ページネーション">';
 	foreach ( $pages as $page ) {
 			echo $page;
 	}

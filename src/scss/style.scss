@@ -24,6 +24,7 @@
 @use "object/component/service-mv" as *;
 @use "object/component/sec-ttl" as *;
 @use "object/component/marquee" as *;
+@use "object/component/pagenation" as *;
 
 // ===================================
 // Project
@@ -89,6 +90,10 @@
 @use "object/project/member/member" as *;
 @use "object/project/member/cont" as *;
 @use "object/project/member/details" as *;
+
+// 実績
+@use "object/project/works/archive" as *;
+@use "object/project/works/details" as *;
 
 // お問い合わせ
 @use "object/project/contact/form" as *;
