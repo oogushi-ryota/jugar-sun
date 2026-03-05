@@ -239,66 +239,51 @@ Template Name: マーケティング
 
       <section class="p-marketing-movie">
         <div class="c-inner">
-          <h2 class="c-sec-ttl">
-            <span class="c-sec-ttl__en">Movie Works</span>
-            <span class="c-sec-ttl__ja">映像制作実績</span>
-          </h2>
-          <ul class="p-marketing-movie__list">
-            <li class="p-marketing-movie__item">
-              <picture class="p-marketing-movie__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img01.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img01.jpg" alt="" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-marketing-movie__item">
-              <picture class="p-marketing-movie__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img02.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img02.jpg" alt="" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-marketing-movie__item">
-              <picture class="p-marketing-movie__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img03.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img03.jpg" alt="" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-marketing-movie__item">
-              <picture class="p-marketing-movie__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img04.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img04.jpg" alt="" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-marketing-movie__item">
-              <picture class="p-marketing-movie__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img05.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img05.jpg" alt="" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-marketing-movie__item">
-              <picture class="p-marketing-movie__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img06.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img06.jpg" alt="" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-marketing-movie__item">
-              <picture class="p-marketing-movie__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img07.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img07.jpg" alt="" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-marketing-movie__item">
-              <picture class="p-marketing-movie__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img08.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img08.jpg" alt="" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-            <li class="p-marketing-movie__item">
-              <picture class="p-marketing-movie__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img09.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing/movie/movie_img09.jpg" alt="" width="360" height="210" loading="lazy">
-              </picture>
-            </li>
-          </ul>
+          <div class="p-marketing-movie__wrap">
+            <h2 class="c-sec-ttl">
+              <span class="c-sec-ttl__en">Movie Works</span>
+              <span class="c-sec-ttl__ja">映像制作実績</span>
+            </h2>
+            <a href="<?php echo esc_url( home_url( '/works/' ) ); ?>" class="c-btn">
+              <span class="c-btn__txt c-btn__txt--org">VIEW ALL</span>
+              <span class="c-btn__obj c-btn__obj--org">
+                <svg width="21" height="6" viewBox="0 0 21 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 5.33398H19L14.5 0.333984" stroke="#FC6847"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <?php
+          $works_query = new WP_Query([
+            'post_type'      => 'works',
+            'posts_per_page' => 9, // 最大9件
+          ]);
+          ?>
+          <?php if ( $works_query->have_posts() ) : ?>
+            <ul class="p-marketing-movie__list">
+              <?php while ( $works_query->have_posts() ) : $works_query->the_post(); ?>
+                <li class="p-marketing-movie__item">
+                  <a href="<?php the_permalink(); ?>" class="p-marketing-movie__link">
+                    <figure class="p-marketing-movie__img">
+                      <?php if ( has_post_thumbnail() ) : ?>
+                        <?php the_post_thumbnail('full', [
+                          'alt'   => get_the_title(),
+                          'width' => 360,
+                          'height' => 210,
+                        ]); ?>
+                      <?php else : ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/default-thumb.jpg" alt="サムネイル" width="360" height="210">
+                      <?php endif; ?>
+                    </figure>
+                  </a>
+                </li>
+              <?php endwhile; ?>
+            </ul>
+          <?php else : ?>
+            <p class="p-marketing-movie__note">実績はまだありません。</p>
+          <?php endif; ?>
+          <?php wp_reset_postdata(); ?>
         </div>
       </section>
 

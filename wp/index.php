@@ -231,7 +231,7 @@ Template Name: トップページ
           <?php
           $works_query = new WP_Query([
             'post_type'      => 'works',
-            'posts_per_page' => 9, // トップページでは最大9件
+            'posts_per_page' => 9, // 最大9件
           ]);
           ?>
           <?php if ( $works_query->have_posts() ) : ?>

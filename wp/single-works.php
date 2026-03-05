@@ -35,6 +35,19 @@ Template Name: 実績詳細
           </figure>
           <div class="p-works-details__cont">
             <?php the_content(); ?>
+
+            <?php
+            $movie_id = SCF::get('movie');
+            $movie_url = $movie_id ? wp_get_attachment_url($movie_id) : '';
+            ?>
+            <?php if ($movie_url) : ?>
+              <div class="p-works-details__video-blk">
+                <video controls class="p-works-details__video">
+                  <source src="<?php echo esc_url($movie_url); ?>" type="video/mp4">
+                </video>
+              </div>
+            <?php endif; ?>
+
           </div>
           <div class="p-works-details__btn">
             <a href="<?php echo esc_url( home_url( '/works/' ) ); ?>" class="c-btn">
