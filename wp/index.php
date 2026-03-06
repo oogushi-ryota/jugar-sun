@@ -19,7 +19,7 @@ Template Name: トップページ
           <div class="p-top-about__cont">
             <span class="c-top-secttl__ja c-top-secttl__ja--org">ABOUT</span>
             <h2 class="p-top-about__ttl">
-              <span class="p-top-about__obj-wrap">
+              <span class="p-top-about__obj-wrap js-slide-in">
                 <picture class="p-top-about__ttl-obj">
                   <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/about/ttl_obj.webp" type="image/webp">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/about/ttl_obj.png" alt="" width="920" height="260">

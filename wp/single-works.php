@@ -19,7 +19,6 @@ Template Name: 実績詳細
       <section class="p-works-details">
         <div class="p-works-details__inner">
           <div class="p-works-details__head">
-            <time datetime="<?php echo get_the_date('c'); ?>" class="p-works-details__time"><?php echo get_the_date('Y.m.d'); ?></time>
             <h2 class="p-works-details__ttl"><?php the_title(); ?></h2>
           </div>
           <figure class="p-works-details__thumb">

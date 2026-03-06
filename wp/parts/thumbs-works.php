@@ -11,7 +11,6 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/default-thumb.jpg" alt="サムネイル" width="360" height="188">
 			<?php endif; ?>
 		</figure>
-		<time datetime="<?php echo get_the_date('c'); ?>" class="p-works-archive__time"><?php echo get_the_date('Y.m.d'); ?></time>
 		<p class="p-works-archive__ttl"><?php the_title(); ?></p>
 	</a>
 </li>

@@ -105,24 +105,26 @@ export function initFooterBackToTop({
 }
 // ▲ページトップへ戻る
 
-// // ▼オブジェクトフェードイン
-// export function initImageSlideIn() {
-//   const targets = document.querySelectorAll('.js-slide-in');
-//   if (!targets.length) return;
-//   const observer = new IntersectionObserver((entries) => {
-//     entries.forEach(entry => {
+// ▼オブジェクトフェードイン
+export function initImageSlideIn() {
+  const targets = document.querySelectorAll('.js-slide-in');
+  if (!targets.length) return;
 
-//       if (entry.isIntersecting) {
-//         entry.target.classList.add('is-scroll-in');
-//       } else {
-//         entry.target.classList.remove('is-scroll-in');
-//       }
-//     });
-//   }, {
-//     root: null,
-//     rootMargin: '0px 0px -30% 0px', // 下から30%で発火
-//     threshold: 0
-//   });
-//   targets.forEach(el => observer.observe(el));
-// }
-// // ▲オブジェクトフェードイン
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-scroll-in');
+        observer.unobserve(entry.target); // 一度だけ発火
+      }
+
+    });
+  }, {
+    root: null,
+    rootMargin: '0px 0px -35% 0px',
+    threshold: 0
+  });
+
+  targets.forEach(el => observer.observe(el));
+}
+// ▲オブジェクトフェードイン

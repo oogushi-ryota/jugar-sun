@@ -50,11 +50,10 @@
   }
 }
 
-// .js-slide-in {
-//   clip-path: inset(0 100% 0 0);
-//   transition: clip-path 2s ease-in-out;
+.js-slide-in {
+  clip-path: inset(0 100% 0 0);
 
-//   &.is-scroll-in {
-//     clip-path: inset(0);
-//   }
-// }
+  &.is-scroll-in {
+    animation: clipLoop 1.5s cubic-bezier(.95, 0, 1, 1) forwards;
+  }
+}
