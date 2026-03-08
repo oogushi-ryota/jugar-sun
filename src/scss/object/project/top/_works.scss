@@ -18,13 +18,18 @@
 
     &__list {
       margin-top: 8rem;
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
+      // display: grid;
+      // grid-template-columns: repeat(5,1fr);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 2rem 4rem;
       position: relative;
 
       @include sp {
         margin-top: 5.6rem;
+        display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: .4rem;
       }
@@ -53,10 +58,14 @@
     }
 
     &__item {
-      width: 36rem;
+      width: 20rem;
 
       @include sp {
-        width: 17.3rem;
+        width: 100%;
+
+        &:nth-of-type(9) {
+          display: none;
+        }
       }
     }
 
