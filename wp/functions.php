@@ -47,6 +47,23 @@ add_filter( 'rest_endpoints', 'my_filter_rest_endpoints', 10, 1 );
 remove_action('wp_head', 'wp_generator');
 
 /*-------------------------------------------------
+  GAタグ
+-------------------------------------------------*/
+function add_ga_tag() {
+?>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEFN1K84SE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FEFN1K84SE');
+</script>
+<?php
+}
+add_action('wp_head', 'add_ga_tag', 1);
+
+/*-------------------------------------------------
   エディタ関連
 -------------------------------------------------*/
 // Gutenberg を無効にする
