@@ -38,10 +38,12 @@ Template Name: 実績詳細
             <?php
             $movie_id = SCF::get('movie');
             $movie_url = $movie_id ? wp_get_attachment_url($movie_id) : '';
+            $thumb = SCF::get('sp-thumb');
+            $thumbnail_url = $thumb ? wp_get_attachment_url($thumb) : '';
             ?>
             <?php if ($movie_url) : ?>
               <div class="p-works-details__video-blk">
-                <video controls class="p-works-details__video">
+                <video controls playsinline class="p-works-details__video" poster="<?php echo esc_url($thumbnail_url); ?>">
                   <source src="<?php echo esc_url($movie_url); ?>" type="video/mp4">
                 </video>
               </div>
